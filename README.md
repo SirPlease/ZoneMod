@@ -15,6 +15,7 @@ If there's a significant change to a plugin, you can modify the .sp file and com
  * [Video](https://www.youtube.com/watch?v=FFQLJBYca1U)
 * Fixed Players being able to Pause/Ready-up by switching to Spec and spamming Pause at the same time.
 * Blocked the infamous Coaster Skip!
+
 - - - -
 ### Map Changes ###
 *Parish Map 2: The Park
@@ -54,12 +55,14 @@ Done specifically to allow Tank Rock damage on Pulled/Jockied Survivors.
 Charger: The Charger already has a lot of things going for him, dealing 8 damage a punch makes him a way too powerful SI.
 Hunter: Immune to M2 while jumping and scratching like crazy, while being such a stealthy SI, it feels unfair to give this SI a slight boost.
 
-* SMG Spread Increased + Ammo and Reload Speeds decreased.
- * Uzi Reload Speed: 1.65 (Acemod: 1.75)
-  * Silenced Uzi Reload Speed: 1.72 (Acemod: 1.8)
-   * Uzi Spread: Moving 2.05 / Still 0.24 (Acemod: 1.65 / 0.20)
-    * Silenced Uzi Spread: Moving 2.25 / Still 0.30 (Acemod: 1.75 / 0.26)
-     * Ammo: 50/700 (Acemod: 50/800)
+* SMG Adjustments:
+ * Reload Speed:
+	 * Uzi: 1.65 (Acemod: 1.75)
+     * Silenced Uzi: 1.72 (Acemod: 1.8)
+ * Spread:
+	 * Uzi: Moving 2.05 / Still 0.24 (Acemod: 1.65 / 0.20)
+     * Silenced Uzi: Moving 2.25 / Still 0.30 (Acemod: 1.75 / 0.26)
+ * Ammo: 50/700 (Acemod: 50/800)
 
 As we've noticed in Acemod V4, the Uzis were completely taking over and shredding everything.
 In the first release of ZoneMod, I want to test out these middle grounds, whilst trying to making the regular Uzi more attractive.
