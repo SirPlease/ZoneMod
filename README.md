@@ -14,6 +14,8 @@ If there's a significant change to a plugin, you can modify the .sp file and com
 * Fixed Tank Rocks getting stuck on Common Infected, they will now successfully pass through them (still killing them). 
  * [Video](https://www.youtube.com/watch?v=FFQLJBYca1U)
 * Fixed Players being able to Pause/Ready-up by switching to Spec and spamming Pause at the same time.
+* Fixed Players being able to Pause after the round had ended.
+* Fixed Players being able shoot without reloading when incapacitated.
 * Blocked the infamous Coaster Skip!
 
 - - - -
@@ -51,14 +53,13 @@ Time to change that, this can be seen as a buff to the Smoker in certain ways.
 Done specifically to allow Tank Rock damage on Pulled/Jockied Survivors.
 
 * Charger and Hunter Claw/Punch Damage have been set to 5.
-
-Charger: The Charger already has a lot of things going for him, dealing 8 damage a punch makes him a way too powerful SI.
-Hunter: Immune to M2 while jumping and scratching like crazy, while being such a stealthy SI, it feels unfair to give this SI a slight boost.
+ * Charger: Already has a lot of things going for him, dealing 8 damage a punch makes him a way too powerful SI.
+ * Hunter: Immune to M2 while jumping and scratching like crazy, while being such a stealthy SI.. It's only 1 Damage less.
 
 * SMG Adjustments:
  * Reload Speed:
-	 * Uzi: 1.65 (Acemod: 1.75)
-     * Silenced Uzi: 1.72 (Acemod: 1.8)
+	 * Uzi: 1.70 (Acemod: 1.75)
+     * Silenced Uzi: 1.76 (Acemod: 1.8)
  * Spread:
 	 * Uzi: Moving 2.05 / Still 0.24 (Acemod: 1.65 / 0.20)
      * Silenced Uzi: Moving 2.25 / Still 0.30 (Acemod: 1.75 / 0.26)
@@ -70,4 +71,8 @@ In the first release of ZoneMod, I want to test out these middle grounds, whilst
 * Shotgun Ammo decreased to 8/80 (Acemod 8/96).
 
 A minor change, let's see how much of an effect something so small has.
-
+- - - -
+### Miscellaneous ###
+* Removed !spawns functionally while the Game is Live.
+* Cleaned up the Chat by blocking useless prints caused by cvar changes and the like.
+* Consistency Checker is loaded by the Config by default, it'll actually use the whitelist.
