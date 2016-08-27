@@ -1,5 +1,5 @@
 # ZoneMod #
-This config is based upon the [Acemod V4 Release](https://www.l4dnation.com/community-news/acemod-v4/) and will have changes from there.
+This config is based upon the [Acemod V4 Release](http://imgur.com/a/8Ptck) and will have changes from there.
 But.. it's not just simply an Acemod/EQ Alteration, it's much more than that and will continue to grow alongside AceMod.
 
 To make it easy for Server Admins that have their own versions of certain Plugins and to make it less likely for Admins to mess up with the Installation, I've seperated all the Plugins.
@@ -33,28 +33,24 @@ The Cemetery has always been a breeze, very easy to shutdown Infected.
 This change allows for more and better Infected Spawns.
 - - - -
 ### Gameplay / Balance Changes ###
-* The Witch has been fully removed.
-
-The First config to actually take this step, this magnificent creature is simply too glitchy and random to accept in a competitive environment.
-
 * Anti-baiting Timer decreased from Acemod's 60s to 30s.
 
 Baiting is a valid tactic, but nobody wants to fall asleep during very lengthy baiting sessions.
+This change means that the timer once triggered is 30s, so don't worry about it being too short.
 
-* Survivors are no longer blocked by common infected when they're being pulled.
- * [Video](https://www.youtube.com/watch?v=PC4k0aKvOlY)
-
-Common Infected, much like the Witch are very nasty glitchy creatures.
-They get stuck on Survivors doing nothing sometimes and simply block excellent pulls.
-Time to change that, this can be seen as a buff to the Smoker in certain ways.
-
-* Smoker/Jockey Godframes have been removed.
-
-Done specifically to allow Tank Rock damage on Pulled/Jockied Survivors.
-
-* Charger and Hunter Claw/Punch Damage have been set to 5.
- * Charger: Already has a lot of things going for him, dealing 8 damage a punch makes him a way too powerful SI.
- * Hunter: Immune to M2 while jumping and scratching like crazy, while being such a stealthy SI.. It's only 1 Damage less.
+* Special Infected
+ * Witch
+     * The Witch has been fully removed.
+	 * The First config to actually take this step, this magnificent creature is simply too glitchy and random to accept in a competitive environment.
+ * Smoker
+	 * Survivors are now pulled through common infected. ([Video](https://www.youtube.com/watch?v=PC4k0aKvOlY))
+	 * Godframes have been Removed.
+ * Jockey
+	 * Godframes have been Removed.
+ * Hunter
+	 * Claw damage decreased to 5.
+ * Charger
+	 * Punch damage decreased to 6.
 
 * SMG Adjustments:
  * Reload Speed:
