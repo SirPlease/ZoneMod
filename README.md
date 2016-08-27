@@ -2,11 +2,12 @@
 This config is based upon the [Acemod V4 Release](http://imgur.com/a/8Ptck) and will have changes from there.
 But.. it's not just simply an Acemod/EQ Alteration, it's much more than that and will continue to grow alongside AceMod.
 
+### Server Admins! ###
 To make it easy for Server Admins that have their own versions of certain Plugins and to make it less likely for Admins to mess up with the Installation, I've seperated all the Plugins.
 This means that you can safely drag and drop the cfg and addon folders to your servers without having to overwrite your modified versions of the plugins, you can from there on out adjust the plugins loaded to your own modified ones.
 If there's a significant change to a plugin, you can modify the .sp file and compile it with your own changes to it.
 
-### Bug / Exploit Fixes
+### Bug / Exploit Fixes ###
 * Fixed Players being able to exploit switching team to get earlier Spawns.
 * Fixed Players being unable to Punch/Jump when they get Tank right after dying as SI.
 * Fixed Players being able to FF eachother with the Shotgun when they're in too close-range.
@@ -16,13 +17,14 @@ If there's a significant change to a plugin, you can modify the .sp file and com
 * Fixed Players being able to Pause/Ready-up by switching to Spec and spamming Pause at the same time.
 * Fixed Players being able to Pause after the round had ended.
 * Fixed Players being able shoot without reloading when incapacitated.
+* Fixed Weapon Changes (Spread, Clipsize, etc) sticking after Config unload.
 * Blocked the infamous Coaster Skip!
 
 - - - -
 ### Map Changes ###
-*Parish Map 2: The Park
+* Parish Map 2: The Park
  * Added a small Hedge to the right side of the Park, this can work in both Survivors and Infected favor. (Infected Mostly)
-  * Added a Tree on the left side of the park to allow more spawns and LOS
+ * Added a Tree on the left side of the park to allow more spawns and LOS
 
 Allow a bit more spawns for Infected and LOS Spots for Survivors.
 
@@ -51,22 +53,26 @@ This change means that the timer once triggered is 30s, so don't worry about it 
 	 * Claw damage decreased to 5.
  * Charger
 	 * Punch damage decreased to 6.
+	 
+* Survivors
+ * Friendly Fire Godframes have been set to 0.3 seconds.
+ 
+This will get rid of instant Friendly Fire incidents after clears.
 
-* SMG Adjustments:
+* Weapon Adjustments:
  * Reload Speed:
 	 * Uzi: 1.70 (Acemod: 1.75)
      * Silenced Uzi: 1.76 (Acemod: 1.8)
  * Spread:
 	 * Uzi: Moving 2.05 / Still 0.24 (Acemod: 1.65 / 0.20)
      * Silenced Uzi: Moving 2.25 / Still 0.30 (Acemod: 1.75 / 0.26)
- * Ammo: 50/700 (Acemod: 50/800)
+ * Ammo
+	 * SMG: 50/700 (Acemod: 50/800)
+	 * Shotgun Ammo decreased to 8/80 (Acemod 8/96).
 
 As we've noticed in Acemod V4, the Uzis were completely taking over and shredding everything.
 In the first release of ZoneMod, I want to test out these middle grounds, whilst trying to making the regular Uzi more attractive.
-
-* Shotgun Ammo decreased to 8/80 (Acemod 8/96).
-
-A minor change, let's see how much of an effect something so small has.
+The Shotguns have a minor change to their max ammo, let's see how much of an effect something so small has.
 - - - -
 ### Miscellaneous ###
 * Removed !spawns functionally while the Game is Live.
