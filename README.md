@@ -2,15 +2,13 @@
 This config is based upon the [Acemod V4 Release](http://imgur.com/a/8Ptck) and will have changes from there.
 But.. it's not just simply an Acemod/EQ Alteration, it's much more than that and will continue to grow alongside AceMod.
 
+- - - -
 ### Server Admins! ###
-To make it easy for Server Admins that have their own versions of certain Plugins and to make it less likely for Admins to mess up with the Installation, I've seperated all the Plugins.
-This means that you can safely drag and drop the cfg and addon folders to your servers without having to overwrite your modified versions of the plugins, you can from there on out adjust the plugins loaded to your own modified ones.
-If there's a significant change to a plugin, you can modify the .sp file and compile it with your own changes to it.
 
 * Admin simplicity:
  * To make sure none of your precious plugins get overwritten, all plugins have their seperate folder (optional/zonemod)
      * If you have a prefered edition of a Plugin, you are able to simply replace the file in optional/zonemod.
-	 * Make sure the Plugin your overwriting doesn't have a feature added that's required for proper ZoneMod play!
+	 * Make sure the Plugin you're overwriting doesn't have a feature added that's required for proper ZoneMod play!
  * To make it easy for personal configuration for certain plugins, there's an added "server_preference.cfg" in the cfg/cfgogl/zonemod folder.
      * This is to prevent Admins from messing with crucial variables, feel free to modify these cvars though!
 	 * Keep in mind that this is a shared cfg, so currently the cfg is empty and the customizable cvars right now will have to be adjusted per config (zm1v1.cfg, zm2v2.cfg, etc)
@@ -69,7 +67,7 @@ This change means that the timer once triggered is 30s, so don't worry about it 
 	 * Punch damage decreased to 6.
 	 
 * Survivors
- * Friendly Fire Godframes have been set to 0.3 seconds.
+ * Friendly Fire Godframes have been added and set to 0.3 seconds.
  
 This will get rid of instant Friendly Fire incidents after clears.
 
