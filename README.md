@@ -7,6 +7,20 @@ To make it easy for Server Admins that have their own versions of certain Plugin
 This means that you can safely drag and drop the cfg and addon folders to your servers without having to overwrite your modified versions of the plugins, you can from there on out adjust the plugins loaded to your own modified ones.
 If there's a significant change to a plugin, you can modify the .sp file and compile it with your own changes to it.
 
+* Admin simplicity:
+ * To make sure none of your precious plugins get overwritten, all plugins have their seperate folder (optional/zonemod)
+     * If you have a prefered edition of a Plugin, you are able to simply replace the file in optional/zonemod.
+	 * Make sure the Plugin your overwriting doesn't have a feature added that's required for proper ZoneMod play!
+ * To make it easy for personal configuration for certain plugins, there's an added "server_preference.cfg" in the cfg/cfgogl/zonemod folder.
+     * This is to prevent Admins from messing with crucial variables, feel free to modify these cvars though!
+	 * Keep in mind that this is a shared cfg, so currently the cfg is empty and the customizable cvars right now will have to be adjusted per config (zm1v1.cfg, zm2v2.cfg, etc)
+	 * These cfgs are still useful for Admins wanting to load certain plugins on top of the Config.
+
+* Admin Tips:
+ * l4d2_playstats needs to be loaded after readyup or it won't function properly, in many matchmodes this plugin is loaded before readyup which breaks the Rank System.
+ * The previously distributed l4d2_weapon_attributes doesn't reset values after config unload, to fix this in other configs simply copy the version used in this config (optional/zonemod/l4d2_weapon_attributes) to your optional folder.
+
+- - - -
 ### Bug / Exploit Fixes ###
 * Fixed Players being able to exploit switching team to get earlier Spawns.
 * Fixed Players being unable to Punch/Jump when they get Tank right after dying as SI.
@@ -78,3 +92,4 @@ The Shotguns have a minor change to their max ammo, let's see how much of an eff
 * Removed !spawns functionally while the Game is Live.
 * Cleaned up the Chat by blocking useless prints caused by cvar changes and the like.
 * Consistency Checker is loaded by the Config by default, it'll actually use the whitelist.
+* Added !voteboss, this will allow players to vote for Boss spawns if needed.
