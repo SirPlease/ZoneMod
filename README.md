@@ -5,6 +5,15 @@ But.. it's not just simply an Acemod/EQ Alteration, it's much more than that and
 - - - -
 ### Server Admins! ###
 
+**LINUX ONLY**
+
+* Requirements:
+ * Clean Servers:
+	 * [Sourcemod](https://www.sourcemod.net/downloads.php?branch=1.7-dev) (1.6 or 1.7, [Metamod](https://www.metamodsource.net/), [Stripper:Source](http://www.bailopan.net/stripper/#install).
+	 * [Extensions, Gamedata, Main Competitive Plugins, etc](http://sirftp.com/Left4Dead2/ZoneModRequirements.zip)
+ * Acemod Servers:
+	 * None, modify your matchmodes file to add the config to the Match menu and you're set. :)
+
 * Admin simplicity:
  * To make sure none of your precious plugins get overwritten, all plugins have their seperate folder (optional/zonemod)
      * If you have a prefered edition of a Plugin, you are able to simply replace the file in optional/zonemod.
@@ -17,6 +26,7 @@ But.. it's not just simply an Acemod/EQ Alteration, it's much more than that and
 * Admin Tips:
  * l4d2_playstats needs to be loaded after readyup or it won't function properly, in many matchmodes this plugin is loaded before readyup which breaks the Rank System.
  * The previously distributed l4d2_weapon_attributes doesn't reset values after config unload, to fix this in other configs simply copy the version used in this config (optional/zonemod/l4d2_weapon_attributes) to your optional folder.
+ * bequiet.smx is a very useful plugin to keep chat clean, if you decide to load in other configs, make sure it's loaded before other plugins.
 
 - - - -
 ### Bug / Exploit Fixes ###
@@ -71,6 +81,10 @@ This change means that the timer once triggered is 30s, so don't worry about it 
  
 This will get rid of instant Friendly Fire incidents after clears.
 
+* Common Infected
+ * Decreased Horde Size on Dark Carnival Map 3: Coaster to 220 (Acemod: 300)
+	 * 300 does seem a bit bizzare and has proven unlikely to survive in most games.
+
 * Weapon Adjustments:
  * Reload Speed:
 	 * Uzi: 1.70 (Acemod: 1.75)
@@ -87,7 +101,7 @@ In the first release of ZoneMod, I want to test out these middle grounds, whilst
 The Shotguns have a minor change to their max ammo, let's see how much of an effect something so small has.
 - - - -
 ### Miscellaneous ###
-* Removed !spawns functionally while the Game is Live.
+* Removed !spawns functionality while the Game is Live.
 * Cleaned up the Chat by blocking useless prints caused by cvar changes and the like.
 * Consistency Checker is loaded by the Config by default, it'll actually use the whitelist.
 * Added !voteboss, this will allow players to vote for Boss spawns if needed.

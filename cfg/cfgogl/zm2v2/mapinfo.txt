@@ -74,7 +74,7 @@
 		"start_extra_dist"  "200.000000"
 		"end_dist"          "150.000000"
 		"max_distance"      "600"
-		"horde_limit"       "300"
+		"horde_limit"       "220"
 	}
 	"c2m4_barns"
 	{
