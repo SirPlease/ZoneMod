@@ -1,6 +1,8 @@
 # ZoneMod #
 This config is based upon the [Acemod V4 Release](http://imgur.com/a/8Ptck) and will have changes from there.
 But.. it's not just simply an Acemod/EQ Alteration, it's much more than that and will continue to grow alongside AceMod.
+ZoneMod focus is also to make setting things up a lot easier for Server Admins, Casters and Players.
+Why make everything difficult when it doesn't have to be? :)
 
 - - - -
 ### Server Admins! ###
@@ -11,6 +13,7 @@ But.. it's not just simply an Acemod/EQ Alteration, it's much more than that and
  * Clean Servers:
 	 * [Sourcemod](https://www.sourcemod.net/downloads.php?branch=1.7-dev) (1.6 or 1.7, [Metamod](https://www.metamodsource.net/), [Stripper:Source](http://www.bailopan.net/stripper/#install).
 	 * [Extensions, Gamedata, Main Competitive Plugins, etc](http://sirftp.com/Left4Dead2/ZoneModRequirements.zip)
+	 * These simple Steps also setup your Server for other configs, so feel free to use this as a base.
  * Acemod Servers:
 	 * None, modify your matchmodes file to add the config to the Match menu and you're set. :)
 
@@ -19,18 +22,20 @@ But.. it's not just simply an Acemod/EQ Alteration, it's much more than that and
      * If you have a prefered edition of a Plugin, you are able to simply replace the file in optional/zonemod.
 	 * Make sure the Plugin you're overwriting doesn't have a feature added that's required for proper ZoneMod play!
  * To make it easy for personal configuration for certain plugins, there's an added "server_preference.cfg" in the cfg/cfgogl/zonemod folder.
-     * This is to prevent Admins from messing with crucial variables, feel free to modify these cvars though!
-	 * Keep in mind that this is a shared cfg, so currently the cfg is empty and the customizable cvars right now will have to be adjusted per config (zm1v1.cfg, zm2v2.cfg, etc)
-	 * These cfgs are still useful for Admins wanting to load certain plugins on top of the Config.
+     * This is to prevent Admins from messing with crucial variables.
+	 * Keep in mind that this is a shared cfg, so it'll only contain shared cvars.
+	 * These cfgs are very useful for Admins wanting to load 1v1~4v4 supported plugins on top of the Configs.
 
 * Admin Tips:
  * l4d2_playstats needs to be loaded after readyup or it won't function properly, in many matchmodes this plugin is loaded before readyup which breaks the Rank System.
  * The previously distributed l4d2_weapon_attributes doesn't reset values after config unload, to fix this in other configs simply copy the version used in this config (optional/zonemod/l4d2_weapon_attributes) to your optional folder.
- * bequiet.smx is a very useful plugin to keep chat clean, if you decide to load in other configs, make sure it's loaded before other plugins.
-
+ * bequiet.smx is a very useful plugin to keep chat clean, if you decide to load it in other configs, make sure it's loaded before other plugins.
+ * TickRateFixes now also fixes Slow Doors and Pistol Scripts, useful for use with other configs.
+	 * Make sure you're not loading l4dpistoldelay if you're using this Plugin.
+	 * Make sure you don't have any adjustments to prop_rotating and prop_rotating_checkpoint speeds in your cfg/stripper folder.
 - - - -
 ### Bug / Exploit Fixes ###
-* Fixed Players being able to exploit switching team to get earlier Spawns.
+* Fixed Players being able to exploit switching team to get earlier SI Spawns.
 * Fixed Players being unable to Punch/Jump when they get Tank right after dying as SI.
 * Fixed Players being able to FF eachother with the Shotgun when they're in too close-range.
  * Seeing as this was introduced without notice, I considered this a bug and resolved it.
@@ -40,6 +45,7 @@ But.. it's not just simply an Acemod/EQ Alteration, it's much more than that and
 * Fixed Players being able to Pause after the round had ended.
 * Fixed Players being able shoot without reloading when incapacitated.
 * Fixed Weapon Changes (Spread, Clipsize, etc) sticking after Config unload.
+* Fixed Slow Doors from within the Config (TickrateFixes.smx)
 * Blocked the infamous Coaster Skip!
 
 - - - -
@@ -83,7 +89,7 @@ This will get rid of instant Friendly Fire incidents after clears.
 
 * Common Infected
  * Decreased Horde Size on Dark Carnival Map 3: Coaster to 220 (Acemod: 300)
-	 * 300 does seem a bit bizzare and has proven unlikely to survive in most games.
+	 * 300 has proven too much in most games, making it unattractive to even attempt to hold out before Tanks.
 
 * Weapon Adjustments:
  * Reload Speed:
@@ -105,3 +111,7 @@ The Shotguns have a minor change to their max ammo, let's see how much of an eff
 * Cleaned up the Chat by blocking useless prints caused by cvar changes and the like.
 * Consistency Checker is loaded by the Config by default, it'll actually use the whitelist.
 * Added !voteboss, this will allow players to vote for Boss spawns if needed.
+ * Very useful when playing Home/Away in Tournaments!
+* Players are now able to register themselves as Casters.
+ * This makes it a lot easier to get Casts setup without the need of an Admin.
+ * As a side effect Ready-up will no longer wait for Casters.
