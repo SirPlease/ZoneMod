@@ -33,6 +33,7 @@ Why make everything difficult when it doesn't have to be? :)
  * TickRateFixes now also fixes Slow Doors and Pistol Scripts, useful for use with other configs.
 	 * Make sure you're not loading l4dpistoldelay if you're using this Plugin.
 	 * Make sure you don't have any adjustments to prop_rotating and prop_rotating_checkpoint speeds in your cfg/stripper folder.
+
 - - - -
 ### Bug / Exploit Fixes ###
 * Fixed Players being able to exploit switching team to get earlier SI Spawns.
