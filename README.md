@@ -11,9 +11,9 @@ Why make everything difficult when it doesn't have to be? :)
 
 * Requirements:
  * Clean Servers:
-	 * [Sourcemod](https://www.sourcemod.net/downloads.php?branch=1.7-dev) (1.6 or 1.7, [Metamod](https://www.metamodsource.net/), [Stripper:Source](http://www.bailopan.net/stripper/#install).
+	 * [Sourcemod](https://www.sourcemod.net/downloads.php?branch=1.7-dev) (1.6 or 1.7), [Metamod](https://www.metamodsource.net/), [Stripper:Source](http://www.bailopan.net/stripper/#install).
 	 * [Extensions, Gamedata, Main Competitive Plugins, etc](http://sirftp.com/Left4Dead2/ZoneModRequirements.zip)
-	 * These simple Steps also setup your Server for other configs, so feel free to use this as a base.
+	 * These simple Steps also setup your Server's base for other configs, so you'll only need the optional plugins that other configs require.
  * Acemod Servers:
 	 * None, modify your matchmodes file to add the config to the Match menu and you're set. :)
 
@@ -33,6 +33,7 @@ Why make everything difficult when it doesn't have to be? :)
  * TickRateFixes now also fixes Slow Doors and Pistol Scripts, useful for use with other configs.
 	 * Make sure you're not loading l4dpistoldelay if you're using this Plugin.
 	 * Make sure you don't have any adjustments to prop_rotating and prop_rotating_checkpoint speeds in your cfg/stripper folder.
+ * JustFixes.smx will be "full" of game fixes, might be useful to load it everywhere~
 
 - - - -
 ### Bug / Exploit Fixes ###
@@ -40,11 +41,11 @@ Why make everything difficult when it doesn't have to be? :)
 * Fixed Players being unable to Punch/Jump when they get Tank right after dying as SI.
 * Fixed Players being able to FF eachother with the Shotgun when they're in too close-range.
  * Seeing as this was introduced without notice, I considered this a bug and resolved it.
-* Fixed Tank Rocks getting stuck on Common Infected, they will now successfully pass through them (still killing them). 
- * [Video](https://www.youtube.com/watch?v=FFQLJBYca1U)
 * Fixed Players being able to Pause/Ready-up by switching to Spec and spamming Pause at the same time.
 * Fixed Players being able to Pause after the round had ended.
 * Fixed Players being able shoot without reloading when incapacitated.
+* Fixed and *Blocked* players from being able to silence pistol sounds when incapacitated.
+	 * Slight punishment for those that still attempt to use this.
 * Fixed Weapon Changes (Spread, Clipsize, etc) sticking after Config unload.
 * Fixed Slow Doors from within the Config (TickrateFixes.smx)
 * Blocked the infamous Coaster Skip!
@@ -52,7 +53,7 @@ Why make everything difficult when it doesn't have to be? :)
 - - - -
 ### Map Changes ###
 * Parish Map 2: The Park
- * Added a small Hedge to the right side of the Park, this can work in both Survivors and Infected favor. (Infected Mostly)
+ * Added a small Hedge to the right side of the Park, this can work in both Survivors and Infected favor. (Mostly Infected)
  * Added a Tree on the left side of the park to allow more spawns and LOS
 
 Allow a bit more spawns for Infected and LOS Spots for Survivors.
@@ -70,6 +71,9 @@ Baiting is a valid tactic, but nobody wants to fall asleep during very lengthy b
 This change means that the timer once triggered is 30s, so don't worry about it being too short.
 
 * Special Infected
+ * Tanks
+	 * Tank Rocks will no longer get stuck on Common Infected, they will now successfully pass through them (still killing them). 
+	 * Tank Rocks will no longer get stuck on Incapped Survivors, they will pass through them unless the same Rock incapped them.
  * Witch
      * The Witch has been fully removed.
 	 * The First config to actually take this step, this magnificent creature is simply too glitchy and random to accept in a competitive environment.
@@ -116,3 +120,6 @@ The Shotguns have a minor change to their max ammo, let's see how much of an eff
 * Players are now able to register themselves as Casters.
  * This makes it a lot easier to get Casts setup without the need of an Admin.
  * As a side effect Ready-up will no longer wait for Casters.
+* Fixed MVP Chatprints.
+ * Your Rank is now correctly shown when using !mvp / sm_mvp
+ * Teammates won't get spammed with their Rank status when you request MVP.
