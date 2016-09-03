@@ -25,10 +25,14 @@ Why make everything difficult when it doesn't have to be? :)
      * This is to prevent Admins from messing with crucial variables.
 	 * Keep in mind that this is a shared cfg, so it'll only contain shared cvars.
 	 * These cfgs are very useful for Admins wanting to load 1v1~4v4 supported plugins on top of the Configs.
+ * Server_Namer is added to this package, useful for a clean Hostname.
+	 * Everything is explained in the Server Preferences.
+	 * It is not loaded by default, needs uncomments.
 
 * Admin Tips:
  * l4d2_playstats needs to be loaded after readyup or it won't function properly, in many matchmodes this plugin is loaded before readyup which breaks the Rank System.
- * The previously distributed l4d2_weapon_attributes doesn't reset values after config unload, to fix this in other configs simply copy the version used in this config (optional/zonemod/l4d2_weapon_attributes) to your optional folder.
+ * The distributed l4d2_weapon_attributes doesn't reset values after config unload.
+	 * A Quick Fix is resetting the values to default in confogl_off, which is what happens in this config.
  * bequiet.smx is a very useful plugin to keep chat clean, if you decide to load it in other configs, make sure it's loaded before other plugins.
  * TickRateFixes now also fixes Slow Doors and Pistol Scripts, useful for use with other configs.
 	 * Make sure you're not loading l4dpistoldelay if you're using this Plugin.
@@ -53,8 +57,8 @@ Why make everything difficult when it doesn't have to be? :)
 - - - -
 ### Map Changes ###
 * Parish Map 2: The Park
- * Added a small Hedge to the right side of the Park, this can work in both Survivors and Infected favor. (Mostly Infected)
- * Added a Tree on the left side of the park to allow more spawns and LOS
+ * Added a small [Hedge](http://i.imgur.com/hpqbs2c.jpg) to the right side of the Park, this can work in both Survivors and Infected favor. (Mostly Infected)
+ * Added a [Tree](http://i.imgur.com/ZC6pVVl.jpg) on the left side of the park to allow more spawns and LOS
 
 Allow a bit more spawns for Infected and LOS Spots for Survivors.
 
@@ -98,11 +102,13 @@ This will get rid of instant Friendly Fire incidents after clears.
 
 * Weapon Adjustments:
  * Reload Speed:
-	 * Uzi: 1.70 (Acemod: 1.75)
-     * Silenced Uzi: 1.76 (Acemod: 1.8)
+	 * Uzi: 1.70 (**Acemod**: 1.75 - **Vanilla**: 2.23)
+     * Silenced Uzi: 1.76 (**Acemod**: 1.8 - **Vanilla**: 2.23)
  * Spread:
-	 * Uzi: Moving 2.05 / Still 0.24 (Acemod: 1.65 / 0.20)
-     * Silenced Uzi: Moving 2.25 / Still 0.30 (Acemod: 1.75 / 0.26)
+	 * Uzi: Moving 2.05 / Still 0.24 (**Acemod**: 1.65 / 0.20 - **Vanilla**: 3.00 / 0.69)
+     * Silenced Uzi: Moving 2.25 / Still 0.30 (**Acemod**: 1.75 / 0.26 - **Vanilla**: 3.00 / 0.85)
+ * Damage:
+	 * Uzi: 21 (**Acemod** & **Vanilla**: 20)
  * Ammo
 	 * SMG: 50/700 (Acemod: 50/800)
 	 * Shotgun Ammo decreased to 8/80 (Acemod 8/96).
@@ -113,13 +119,17 @@ The Shotguns have a minor change to their max ammo, let's see how much of an eff
 - - - -
 ### Miscellaneous ###
 * Removed !spawns functionality while the Game is Live.
-* Cleaned up the Chat by blocking useless prints caused by cvar changes and the like.
+* Cleaned up the Chat by blocking useless prints caused by cvar, clients used by Players, etc.
 * Consistency Checker is loaded by the Config by default, it'll actually use the whitelist.
-* Added !voteboss, this will allow players to vote for Boss spawns if needed.
+* Added !voteboss, this will allow players to vote for Boss Spawns if needed.
  * Very useful when playing Home/Away in Tournaments!
+ * Example: !voteboss <tank> <witch>
 * Players are now able to register themselves as Casters.
  * This makes it a lot easier to get Casts setup without the need of an Admin.
  * As a side effect Ready-up will no longer wait for Casters.
-* Fixed MVP Chatprints.
- * Your Rank is now correctly shown when using !mvp / sm_mvp
- * Teammates won't get spammed with their Rank status when you request MVP.
+* MVP Chatprints.
+ * Your Rank is now correctly shown when using !mvp / sm_mvp during game.
+ * Teammates won't get spammed with their current Rank status when you request MVP.
+* Added !cfg
+ * This allows players to see the current status of the config, in-game (Changelog)
+ 
