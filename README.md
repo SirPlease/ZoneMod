@@ -1,7 +1,7 @@
 # ZoneMod #
 This config is based upon the [Acemod V4 Release](http://imgur.com/a/8Ptck) and will have changes from there.
-But.. it's not just simply an Acemod/EQ Alteration, it's much more than that and will continue to grow alongside AceMod.
-ZoneMod focus is also to make setting things up a lot easier for Server Admins, Casters and Players.
+But.. it's not just simply an Acemod/EQ Alteration, it's much more than that and will continue to grow alongside/past AceMod.
+ZoneMod's focus is also to make setting things up a lot easier for Server Admins, Casters and Players.
 Why make everything difficult when it doesn't have to be? :)
 
 - - - -
@@ -30,9 +30,6 @@ Why make everything difficult when it doesn't have to be? :)
 	 * It is not loaded by default, needs uncomments.
 
 * Admin Tips:
- * l4d2_playstats needs to be loaded after readyup or it won't function properly, in many matchmodes this plugin is loaded before readyup which breaks the Rank System.
- * The distributed l4d2_weapon_attributes doesn't reset values after config unload.
-	 * A Quick Fix is resetting the values to default in confogl_off, which is what happens in this config.
  * bequiet.smx is a very useful plugin to keep chat clean, if you decide to load it in other configs, make sure it's loaded before other plugins.
  * TickRateFixes now also fixes Slow Doors and Pistol Scripts, useful for use with other configs.
 	 * Make sure you're not loading l4dpistoldelay if you're using this Plugin.
@@ -47,15 +44,15 @@ Why make everything difficult when it doesn't have to be? :)
  * Seeing as this was introduced without notice, I considered this a bug and resolved it.
 * Fixed Players being able to Pause/Ready-up by switching to Spec and spamming Pause at the same time.
 * Fixed Players being able to Pause after the round had ended.
-* Fixed Players being able shoot without reloading when incapacitated.
-* Fixed and *Blocked* players from being able to silence pistol sounds when incapacitated.
-	 * Slight punishment for those that still attempt to use this.
 * Fixed Weapon Changes (Spread, Clipsize, etc) sticking after Config unload.
 * Fixed Slow Doors from within the Config (TickrateFixes.smx)
 * Blocked the infamous Coaster Skip!
 
 - - - -
 ### Map Changes ###
+
+< Nothing Major in this release. >
+
 * Parish Map 2: The Park
  * Added a small [Hedge](http://i.imgur.com/hpqbs2c.jpg) to the right side of the Park, this can work in both Survivors and Infected favor. (Mostly Infected)
  * Added a [Tree](http://i.imgur.com/ZC6pVVl.jpg) on the left side of the park to allow more spawns and LOS
@@ -78,6 +75,7 @@ This change means that the timer once triggered is 30s, so don't worry about it 
  * Tanks
 	 * Tank Rocks will no longer get stuck on Common Infected, they will now successfully pass through them (still killing them). 
 	 * Tank Rocks will no longer get stuck on Incapped Survivors, they will pass through them unless the same Rock incapped them.
+	 * Hitting a Punch or Rock will now instantly interrupt the pick-up, preventing a succesful pick-up.
  * Witch
      * The Witch has been fully removed.
 	 * The First config to actually take this step, this magnificent creature is simply too glitchy and random to accept in a competitive environment.
@@ -90,7 +88,9 @@ This change means that the timer once triggered is 30s, so don't worry about it 
 	 * Claw damage decreased to 5.
  * Charger
 	 * Punch damage decreased to 6.
-	 
+ * Spitter
+	 * Spitting on Incapped Players will now block pick-ups as long as the spit is dealing damage.
+
 * Survivors
  * Friendly Fire Godframes have been added and set to 0.3 seconds.
  
@@ -105,13 +105,11 @@ This will get rid of instant Friendly Fire incidents after clears.
 	 * Uzi: 1.70 (**Acemod**: 1.75 - **Vanilla**: 2.23)
      * Silenced Uzi: 1.76 (**Acemod**: 1.8 - **Vanilla**: 2.23)
  * Spread:
-	 * Uzi: Moving 2.05 / Still 0.24 (**Acemod**: 1.65 / 0.20 - **Vanilla**: 3.00 / 0.69)
+	 * Uzi: Moving 1.80 / Still 0.20 (**Acemod**: 1.65 / 0.20 - **Vanilla**: 3.00 / 0.69)
      * Silenced Uzi: Moving 2.25 / Still 0.30 (**Acemod**: 1.75 / 0.26 - **Vanilla**: 3.00 / 0.85)
  * Damage:
 	 * Uzi: 21 (**Acemod** & **Vanilla**: 20)
- * Ammo
-	 * SMG: 50/700 (Acemod: 50/800)
-	 * Shotgun Ammo decreased to 8/80 (Acemod 8/96).
+	 * Shotgun Bonus Damage Range: 60 (**Acemod**: 75 - **Vanilla**: 100)
 
 As we've noticed in Acemod V4, the Uzis were completely taking over and shredding everything.
 In the first release of ZoneMod, I want to test out these middle grounds, whilst trying to making the regular Uzi more attractive.
@@ -127,9 +125,6 @@ The Shotguns have a minor change to their max ammo, let's see how much of an eff
 * Players are now able to register themselves as Casters.
  * This makes it a lot easier to get Casts setup without the need of an Admin.
  * As a side effect Ready-up will no longer wait for Casters.
-* MVP Chatprints.
- * Your Rank is now correctly shown when using !mvp / sm_mvp during game.
- * Teammates won't get spammed with their current Rank status when you request MVP.
 * Added !cfg
  * This allows players to see the current status of the config, in-game (Changelog)
  
