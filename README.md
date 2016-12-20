@@ -34,7 +34,6 @@ Why make everything difficult when it doesn't have to be? :)
  * TickRateFixes now also fixes Slow Doors and Pistol Scripts, useful for use with other configs.
 	 * Make sure you're not loading l4dpistoldelay if you're using this Plugin.
 	 * Make sure you don't have any adjustments to prop_rotating and prop_rotating_checkpoint speeds in your cfg/stripper folder.
- * JustFixes.smx will be "full" of game fixes, might be useful to load it everywhere~
 
 - - - -
 ### Bug / Exploit Fixes ###
@@ -109,7 +108,7 @@ This will get rid of instant Friendly Fire incidents after clears.
      * Silenced Uzi: Moving 2.25 / Still 0.30 (**Acemod**: 1.75 / 0.26 - **Vanilla**: 3.00 / 0.85)
  * Damage:
 	 * Uzi: 21 (**Acemod** & **Vanilla**: 20)
-	 * Shotgun Bonus Damage Range: 60 (**Acemod**: 75 - **Vanilla**: 100)
+	 * Shotgun Bonus Damage Range: 50 (**Acemod**: 75 - **Vanilla**: 100)
 
 As we've noticed in Acemod V4, the Uzis were completely taking over and shredding everything.
 In the first release of ZoneMod, I want to test out these middle grounds, whilst trying to making the regular Uzi more attractive.
@@ -121,10 +120,13 @@ The Shotguns have a minor change to their max ammo, let's see how much of an eff
 * Consistency Checker is loaded by the Config by default, it'll actually use the whitelist.
 * Added !voteboss, this will allow players to vote for Boss Spawns if needed.
  * Very useful when playing Home/Away in Tournaments!
- * Example: !voteboss <tank> <witch>
+ * Example: !voteboss tank witch
 * Players are now able to register themselves as Casters.
  * This makes it a lot easier to get Casts setup without the need of an Admin.
  * As a side effect Ready-up will no longer wait for Casters.
 * Added !cfg
  * This allows players to see the current status of the config, in-game (Changelog)
+* Replaced l4d2_playstats with survivor_mvp.
+ * The original didn't work as it should and was a giant wall of code, which made me rollback to an older working edition.
+ * Fully colorized, Rank prints.. Functional!
  
