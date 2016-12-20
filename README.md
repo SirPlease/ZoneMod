@@ -91,7 +91,7 @@ This change means that the timer once triggered is 30s, so don't worry about it 
 	 * Spitting on Incapped Players will now block pick-ups as long as the spit is dealing damage.
 
 * Survivors
- * Friendly Fire Godframes have been added and set to 0.3 seconds.
+ * Friendly Fire Godframes have been added and set to 0.2 seconds.
  
 This will get rid of instant Friendly Fire incidents after clears.
 
