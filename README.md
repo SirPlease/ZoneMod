@@ -54,7 +54,7 @@ Why make everything difficult when it doesn't have to be? :)
 
 * Parish Map 2: The Park
  * Added a small [Hedge](http://i.imgur.com/hpqbs2c.jpg) to the right side of the Park, this can work in both Survivors and Infected favor. (Mostly Infected)
- * Added a [Tree](http://i.imgur.com/ZC6pVVl.jpg) on the left side of the park to allow more spawns and LOS
+ * Added a [Tree](http://i.imgur.com/Nfnr29y.jpg) on the left side of the park to allow more spawns and LOS
 
 Allow a bit more spawns for Infected and LOS Spots for Survivors.
 
@@ -66,9 +66,21 @@ This change allows for more and better Infected Spawns.
 - - - -
 ### Gameplay / Balance Changes ###
 * Anti-baiting Timer decreased from Acemod's 60s to 30s.
-
 Baiting is a valid tactic, but nobody wants to fall asleep during very lengthy baiting sessions.
 This change means that the timer once triggered is 30s, so don't worry about it being too short.
+
+* Movement Speed & Slowdown.
+ * Survivors
+	 * Normal: 220. (**Acemod & Vanilla**: 220)
+	 * Water: 170 @ 40+HP & 150 whilst Limping. (**Acemod**: 210/150 - **Vanilla**: 170/150)
+  * Tank
+	 * Normal: 200. (**Acemod**: 200 - **Vanilla**: 210)
+	 * Water: 160. (**Acemod**: 200 - **Vanilla**: 210)
+
+Water Slowdown is back, but with a minor change, allowing Survivors and Tanks to move at about the same speed (220 vs 200) and (170 vs 160) that they normally would when not in the water.
+The major exception being that whilst Limping, the water is a much safer place for you to fight Tanks compared to Acemod and Vanilla. (Land: 150 vs 200 - Water: 150 vs 160)
+This change is made for the maps that were designed with water slowdown in mind. (Hard Rain, Swamp Fever, etc)
+This also resolves common not slowing you down whilst in the Water.
 
 * Special Infected
  * Tanks
@@ -109,10 +121,22 @@ This will get rid of instant Friendly Fire incidents after clears.
  * Damage:
 	 * Uzi: 21 (**Acemod** & **Vanilla**: 20)
 	 * Shotgun Bonus Damage Range: 50 (**Acemod**: 75 - **Vanilla**: 100)
+ * Damage Drop-off:
+	 * Uzi: 0.81 (**Acemod & Vanilla**: 0.83)
+	 * Silenced Uzi: 0.77 (**Acemod & Vanilla**: 0.83)
+ * Ammo:
+	 * Uzi & Silenced Uzi: 50/650 (**Acemod & Vanilla*: 50/800)
 
 As we've noticed in Acemod V4, the Uzis were completely taking over and shredding everything.
 In the first release of ZoneMod, I want to test out these middle grounds, whilst trying to making the regular Uzi more attractive.
-The Shotguns have a minor change to their max ammo, let's see how much of an effect something so small has.
+The damage-drop off changes will result into the Uzi having a noticable advantage at long-range damage while the silenced uzi will remain dominant in close to medium range damage, as well as SI taking far less damage from medium to long range.
+Resetting the ammo back to Vanilla values for Uzis should have an noticable effect on spray and praying.
+
+* Water Slowdown
+ * Survivor Speed: 170/150 [40+HP/Limping] - Same as Vanilla.
+ * 
+ * Campaigns that were designed with water slowdown in mind have suffered severely in Acemod, it's time to recover.
+	  
 - - - -
 ### Miscellaneous ###
 * Removed !spawns functionality while the Game is Live.
@@ -120,13 +144,13 @@ The Shotguns have a minor change to their max ammo, let's see how much of an eff
 * Consistency Checker is loaded by the Config by default, it'll actually use the whitelist.
 * Added !voteboss, this will allow players to vote for Boss Spawns if needed.
  * Very useful when playing Home/Away in Tournaments!
- * Example: !voteboss tank witch
+ * Usage: !voteboss tank witch
 * Players are now able to register themselves as Casters.
  * This makes it a lot easier to get Casts setup without the need of an Admin.
  * As a side effect Ready-up will no longer wait for Casters.
 * Added !cfg
  * This allows players to see the current status of the config, in-game (Changelog)
-* Replaced l4d2_playstats with survivor_mvp.
- * The original didn't work as it should and was a giant wall of code, which made me rollback to an older working edition.
- * Fully colorized, Rank prints.. Functional!
+* Combined Usage of l4d2_playstats with survivor_mvp.
+ * The original didn't work as it should and was a giant wall of code, which made me simply combine the two plugins to get the best out of them.
+ * Fully colorized, Rank prints, console info.. Functional!
  
