@@ -50,19 +50,60 @@ Why make everything difficult when it doesn't have to be? :)
 - - - -
 ### Map Changes ###
 
-< Nothing Major in this release. >
+- Big Thanks to **NF** for these! :)
 
-* Parish Map 2: The Park
- * Added a small [Hedge](http://i.imgur.com/hpqbs2c.jpg) to the right side of the Park, this can work in both Survivors and Infected favor. (Mostly Infected)
- * Added a [Tree](http://i.imgur.com/Nfnr29y.jpg) on the left side of the park to allow more spawns and LOS
+* General
+ * All pill cabinets in Valve maps will now have a maximum of 2 pills
 
-Allow a bit more spawns for Infected and LOS Spots for Survivors.
+* Dark Carnival
+ * Map 2
+	 * Fixed Survivors getting punched onto wooden supports on the ladder choke rooftop.
+	 * Added saferoom props from map 3 start to map 2 end for consistency.
+ * Map 3
+	 * Blocked Infected from getting underneath the map near the coaster 
+	 * Added a few props to saferoom on map 3 to discourage fighting the Tank there
+	 * Added saferoom props from map 4 start to map 3 end for consistency.
+	 * Fixed an exploit that allowed Survivors to skip to the end of the coaster near the first ramp
 
-* Map 3: Cemetery
- * Changed the Routing, [Video](https://www.youtube.com/watch?v=SdHp28zt-E0) 
+* Hard Rain
+ * Map 1
+	 * Added a way for infected to get on the tall rooftop near the ambulance.
+ * Map 4
+	 * Added a way for infected to get on the tall rooftop near the ambulance.
+ * Finale
+	 * Removed extra pills.
 
-The Cemetery has always been a breeze, very easy to shutdown Infected.
-This change allows for more and better Infected Spawns.
+* The Parish
+ * Map 1
+	 * Fixed players getting stuck on the trashbags at the very start.
+ * Map 2
+	 * Removed yellow concrete block in alleyway.
+	 * Blocked survivors from getting on a balcony with no nav.
+	 * Replaced wall in area leading up to alleyway with props that make more aesthetic sense.
+ * Map 3
+	 * Fixed bridge explosion doing damage to infected.
+	 * Added a new, more challenging path through the graveyard. [Video](https://www.youtube.com/watch?v=SdHp28zt-E0)
+	 * Map Distance has been increased to 700
+ * Map 4
+	 * Fixed survivors getting punched out of map in the first alleyway. 
+	 * Added an ammo pile in the event area for late spawn Tank fights.
+	 * Fixed Survivors sometimes hanging from the rooftop by the event.
+
+* No Mercy
+ * Map 3
+	 * Readded the forklift to the warehouse.
+	 * Fixed a stuck spot on the tables next to the pill cabinet.
+ * Map 4
+	 * Removed floodlight props due to exploit potential.
+
+* Death Toll
+ * Map 1 
+	 * Fixed being able to jump across the bridge and skip the ladder choke.
+	 * Fixed infected being able to get under the map near the ladder choke.
+	 * Fixed multiple out of map exploits near the start.
+ * Map 5
+	 * Added some spawns near the dock to discourage camping there.
+
 - - - -
 ### Gameplay / Balance Changes ###
 * Anti-baiting Timer decreased from Acemod's 60s to 30s.
@@ -75,10 +116,10 @@ This change means that the timer once triggered is 30s, so don't worry about it 
 	 * Water: 170 @ 40+HP & 150 whilst Limping. (**Acemod**: 210/150 - **Vanilla**: 170/150)
   * Tank
 	 * Normal: 200. (**Acemod**: 200 - **Vanilla**: 210)
-	 * Water: 160. (**Acemod**: 200 - **Vanilla**: 210)
+	 * Water: 170. (**Acemod**: 200 - **Vanilla**: 210)
 
-Water Slowdown is back, but with a minor change, allowing Survivors and Tanks to move at about the same speed (220 vs 200) and (170 vs 160) that they normally would when not in the water.
-The major exception being that whilst Limping, the water is a much safer place for you to fight Tanks compared to Acemod and Vanilla. (Land: 150 vs 200 - Water: 150 vs 160)
+Water Slowdown is back, but with a minor change, allowing Survivors and Tanks to move the same speed (170 vs 170) that they normally would when not in the water.
+The major exception being that whilst Limping, the water is a much safer place for you to fight Tanks compared to Acemod and Vanilla. (Land: 150 vs 200 - Water: 150 vs 170) as well as there being water slowdown for the Survivors in the water, rather than entirely removing it during Tank Fights.
 This change is made for the maps that were designed with water slowdown in mind. (Hard Rain, Swamp Fever, etc)
 This also resolves common not slowing you down whilst in the Water.
 
@@ -104,8 +145,7 @@ This also resolves common not slowing you down whilst in the Water.
 
 * Survivors
  * Friendly Fire Godframes have been added and set to 0.2 seconds.
- 
-This will get rid of instant Friendly Fire incidents after clears.
+ * After being punched, melee weapons will be useless for a bit to ensure "easy-hits" are not possible.
 
 * Common Infected
  * Decreased Horde Size on Dark Carnival Map 3: Coaster to 220 (Acemod: 300)
@@ -123,7 +163,7 @@ This will get rid of instant Friendly Fire incidents after clears.
 	 * Shotgun Bonus Damage Range: 50 (**Acemod**: 75 - **Vanilla**: 100)
  * Damage Drop-off:
 	 * Uzi: 0.81 (**Acemod & Vanilla**: 0.83)
-	 * Silenced Uzi: 0.77 (**Acemod & Vanilla**: 0.83)
+	 * Silenced Uzi: 0.79 (**Acemod & Vanilla**: 0.83)
  * Ammo:
 	 * Uzi & Silenced Uzi: 50/650 (**Acemod & Vanilla*: 50/800)
 
@@ -131,15 +171,12 @@ As we've noticed in Acemod V4, the Uzis were completely taking over and shreddin
 In the first release of ZoneMod, I want to test out these middle grounds, whilst trying to making the regular Uzi more attractive.
 The damage-drop off changes will result into the Uzi having a noticable advantage at long-range damage while the silenced uzi will remain dominant in close to medium range damage, as well as SI taking far less damage from medium to long range.
 Resetting the ammo back to Vanilla values for Uzis should have an noticable effect on spray and praying.
-
-* Water Slowdown
- * Survivor Speed: 170/150 [40+HP/Limping] - Same as Vanilla.
- * 
- * Campaigns that were designed with water slowdown in mind have suffered severely in Acemod, it's time to recover.
-	  
+  
 - - - -
 ### Miscellaneous ###
 * Removed !spawns functionality while the Game is Live.
+* Survivors no longer switch to Pills when they're being passed pills through M2.
+* Survivors no longer switch from their current slot to their Secondary Weapon on pick-up (exception of Dual Pistols)
 * Cleaned up the Chat by blocking useless prints caused by cvar, clients used by Players, etc.
 * Consistency Checker is loaded by the Config by default, it'll actually use the whitelist.
 * Added !voteboss, this will allow players to vote for Boss Spawns if needed.
