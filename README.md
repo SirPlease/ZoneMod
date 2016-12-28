@@ -110,19 +110,6 @@ Why make everything difficult when it doesn't have to be? :)
 Baiting is a valid tactic, but nobody wants to fall asleep during very lengthy baiting sessions.
 This change means that the timer once triggered is 30s, so don't worry about it being too short.
 
-* Movement Speed & Slowdown.
- * Survivors
-	 * Normal: 220. (**Acemod & Vanilla**: 220)
-	 * Water: 170 @ 40+HP & 150 whilst Limping. (**Acemod**: 210/150 - **Vanilla**: 170/150)
-  * Tank
-	 * Normal: 200. (**Acemod**: 200 - **Vanilla**: 210)
-	 * Water: 170. (**Acemod**: 200 - **Vanilla**: 210)
-
-Water Slowdown is back, but with a minor change, allowing Survivors and Tanks to move the same speed (170 vs 170) that they normally would when not in the water.
-The major exception being that whilst Limping, the water is a much safer place for you to fight Tanks compared to Acemod and Vanilla. (Land: 150 vs 200 - Water: 150 vs 170) as well as there being water slowdown for the Survivors in the water, rather than entirely removing it during Tank Fights.
-This change is made for the maps that were designed with water slowdown in mind. (Hard Rain, Swamp Fever, etc)
-This also resolves common not slowing you down whilst in the Water.
-
 * Special Infected
  * Tanks
 	 * Tank Rocks will no longer get stuck on Common Infected, they will now successfully pass through them (still killing them). 
@@ -138,6 +125,8 @@ This also resolves common not slowing you down whilst in the Water.
 	 * Godframes have been Removed.
  * Hunter
 	 * Claw damage decreased to 5.
+	 * Survivors can now shove Hunters that are Walking/Jumping.
+	 * Survivors can now reliably shove Hunters that have another Survivor capped.
  * Charger
 	 * Punch damage decreased to 6.
  * Spitter
@@ -146,10 +135,15 @@ This also resolves common not slowing you down whilst in the Water.
 * Survivors
  * Friendly Fire Godframes have been added and set to 0.2 seconds.
  * After being punched, melee weapons will be useless for a bit to ensure "easy-hits" are not possible.
+ * Water Slowdown is back, but only outside of Tank Fights.
 
 * Common Infected
  * Decreased Horde Size on Dark Carnival Map 3: Coaster to 220 (Acemod: 300)
 	 * 300 has proven too much in most games, making it unattractive to even attempt to hold out before Tanks.
+
+* Melee Weapons
+ * Knife and the Tonfa have been removed from within the Config because of their speed.
+ * Hardcoded spawns are now random, this means that for example in Parish 2 start saferoom you might have a cuttable melee instead of a Frying Pan.
 
 * Weapon Adjustments:
  * Reload Speed:
@@ -166,6 +160,7 @@ This also resolves common not slowing you down whilst in the Water.
 	 * Silenced Uzi: 0.79 (**Acemod & Vanilla**: 0.83)
  * Ammo:
 	 * Uzi & Silenced Uzi: 50/650 (**Acemod & Vanilla*: 50/800)
+	 
 
 As we've noticed in Acemod V4, the Uzis were completely taking over and shredding everything.
 In the first release of ZoneMod, I want to test out these middle grounds, whilst trying to making the regular Uzi more attractive.
