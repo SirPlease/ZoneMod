@@ -8,6 +8,7 @@ Why make everything difficult when it doesn't have to be? :)
 ### Server Admins! ###
 
 **LINUX ONLY**
+**DISCLAIMER: Using the plugins provided with the download in other configs is at your own Risk as they're designed around ZoneMod**
 
 * Requirements:
  * Clean Servers:
@@ -28,9 +29,12 @@ Why make everything difficult when it doesn't have to be? :)
  * Server_Namer is added to this package, useful for a clean Hostname.
 	 * Everything is explained in the Server Preferences.
 	 * It is not loaded by default, needs uncomments.
+	 * The .txt file will ask permission for an override, this should be fine, but you might want to compare the two if you want to be sure.
 
 * Admin Tips:
  * bequiet.smx is a very useful plugin to keep chat clean, if you decide to load it in other configs, make sure it's loaded before other plugins.
+	 * Keep in mind that it comes with a "Spec-Listening Feature", this might collide with other plugins.
+	 * Simply unload the other plugin, or set bequiet's "bq_show_player_team_chat_spec" cvar to 0.
  * TickRateFixes now also fixes Slow Doors and Pistol Scripts, useful for use with other configs.
 	 * Make sure you're not loading l4dpistoldelay if you're using this Plugin.
 	 * Make sure you don't have any adjustments to prop_rotating and prop_rotating_checkpoint speeds in your cfg/stripper folder.
@@ -45,7 +49,7 @@ Why make everything difficult when it doesn't have to be? :)
 * Fixed Players being able to Pause after the round had ended.
 * Fixed Weapon Changes (Spread, Clipsize, etc) sticking after Config unload.
 * Fixed Slow Doors from within the Config (TickrateFixes.smx)
-* Blocked the infamous Coaster Skip!
+* Fixed Players taking Friendly Fire when capped.
 
 - - - -
 ### Map Changes ###
@@ -64,6 +68,8 @@ Why make everything difficult when it doesn't have to be? :)
 	 * Added a few props to saferoom on map 3 to discourage fighting the Tank there
 	 * Added saferoom props from map 4 start to map 3 end for consistency.
 	 * Fixed an exploit that allowed Survivors to skip to the end of the coaster near the first ramp
+	 * Blocked a way to jump up some wood pieces and skip to the end of the coaster
+	 * Blocked survivors from accessing parts of the coaster tracks that allows them to turn off the event early
 
 * Hard Rain
  * Map 1
@@ -125,8 +131,7 @@ This change means that the timer once triggered is 30s, so don't worry about it 
 	 * Godframes have been Removed.
  * Hunter
 	 * Claw damage decreased to 5.
-	 * Survivors can now shove Hunters that are Walking/Jumping.
-	 * Survivors can now reliably shove Hunters that have another Survivor capped.
+	 * Hunters can only be shoved when they have a Survivor capped.
  * Charger
 	 * Punch damage decreased to 6.
  * Spitter
@@ -159,7 +164,7 @@ This change means that the timer once triggered is 30s, so don't worry about it 
 	 * Uzi: 0.81 (**Acemod & Vanilla**: 0.83)
 	 * Silenced Uzi: 0.79 (**Acemod & Vanilla**: 0.83)
  * Ammo:
-	 * Uzi & Silenced Uzi: 50/650 (**Acemod & Vanilla*: 50/800)
+	 * Uzi & Silenced Uzi: 50/650 (**Acemod**: 50/800)
 	 
 
 As we've noticed in Acemod V4, the Uzis were completely taking over and shredding everything.
@@ -169,14 +174,21 @@ Resetting the ammo back to Vanilla values for Uzis should have an noticable effe
   
 - - - -
 ### Miscellaneous ###
+* Removed the Infected "You are Dead" screen.
 * Removed !spawns functionality while the Game is Live.
 * Survivors no longer switch to Pills when they're being passed pills through M2.
-* Survivors no longer switch from their current slot to their Secondary Weapon on pick-up (exception of Dual Pistols)
+* Survivors can choose whether or not to use the "Vanilla" behaviour when picking up Secondary Weapons when they have something else equipped.
+ * You can use !secondary to toggle the behaviour.
+	 * Vanilla behaviour: Switch instantly to picked up Secondary Weapon.
+	 * Modified behaviour: Add the item to the inventory, but don't switch to it.
 * Cleaned up the Chat by blocking useless prints caused by cvar, clients used by Players, etc.
 * Consistency Checker is loaded by the Config by default, it'll actually use the whitelist.
 * Added !voteboss, this will allow players to vote for Boss Spawns if needed.
  * Very useful when playing Home/Away in Tournaments!
  * Usage: !voteboss tank witch
+* Added !slots, this will allow players to vote for the Maximum amount of slots on the Server during the game.
+ * Again, very useful when playing Tournaments.
+ * Usage: !slots <number>
 * Players are now able to register themselves as Casters.
  * This makes it a lot easier to get Casts setup without the need of an Admin.
  * As a side effect Ready-up will no longer wait for Casters.
