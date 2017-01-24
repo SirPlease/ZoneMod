@@ -1,4 +1,7 @@
 # ZoneMod #
+
+** LINUX SERVERS ONLY **
+
 This config is based upon the [Acemod V4 Release](http://imgur.com/a/8Ptck) and will have changes from there.
 But.. it's not just simply an Acemod/EQ Alteration, it's much more than that and will continue to grow alongside/past AceMod.
 ZoneMod's focus is also to make setting things up a lot easier for Server Admins, Casters and Players.
@@ -7,7 +10,6 @@ Why make everything difficult when it doesn't have to be? :)
 - - - -
 ### Server Admins! ###
 
-**LINUX ONLY**
 **DISCLAIMER: Using the plugins provided with the download in other configs is at your own Risk as they're designed around ZoneMod**
 
 * Requirements:
