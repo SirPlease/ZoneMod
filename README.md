@@ -113,11 +113,11 @@ Why make everything difficult when it doesn't have to be? :)
 ### Gameplay / Balance Changes ###
 * Anti-baiting Timer decreased from Acemod's 60s to 30s.
 * Anti-baiting Sensitivity Delay decreased from Acemod's 20s to 15s.
-Baiting is a valid tactic, but nobody wants to fall asleep during very lengthy baiting sessions.
-This change means that the timer once triggered is 30s, so don't worry about it being too short.
+  * Baiting is a valid tactic, but nobody wants to fall asleep during very lengthy baiting sessions.
+  * This change means that the timer once triggered is 30s, so don't worry about it being too short.
 
 * Damage Bonus now also takes Friendly Fire and Fall Damage into account.
-No more getting away with these!
+  * No more getting away with these!
 
 * Special Infected
   * Tanks
