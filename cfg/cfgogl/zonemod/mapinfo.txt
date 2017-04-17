@@ -74,7 +74,9 @@
 		"start_extra_dist"  "200.000000"
 		"end_dist"          "150.000000"
 		"max_distance"      "600"
-		"horde_limit"       "220"
+		"horde_limit"       "300"
+		"tank_ban_flow_min" "56"
+		"tank_ban_flow_max" "100"
 	}
 	"c2m4_barns"
 	{
@@ -223,7 +225,6 @@
 		"end_dist"          "250.000000"
 		"tank_ban_flow_min" "50"
 		"tank_ban_flow_max" "70"
-		"max_distance"      "700"
 	}
 	"c5m4_quarter"
 	{
