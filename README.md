@@ -145,7 +145,7 @@ Why make everything difficult when it doesn't have to be? :)
   * Dark Carnival Map 3: The Tank can no longer spawn on the Coaster.
 
 * Survivors
-  * Friendly Fire Godframes have been added and set to 0.2 seconds.
+  * Friendly Fire Godframes have been added and set to 0.8 seconds.
   * After being punched, melee weapons will be useless for a bit to ensure "easy-hits" are not possible.
   * Water Slowdown is back, but only outside of Tank Fights.
 
@@ -176,6 +176,7 @@ Resetting the ammo back to Vanilla values for Uzis should have an noticable effe
   
 - - - -
 ### Miscellaneous ###
+* Updated AutoPause so that it no longers pauses during Ready-up and Round Ends.
 * Removed !spawns functionality while the Game is Live.
 * Survivors no longer switch to Pills automatically when they're being passed pills through M2.
 * Survivors can choose whether or not to use the "Vanilla" behaviour when picking up Secondary Weapons when they have something else equipped.
