@@ -60,6 +60,10 @@ Why make everything difficult when it doesn't have to be? :)
 * General
   * All pill cabinets in Valve maps will now have a maximum of 2 pills
 
+* Dead Center
+  * Map 4
+	* Event Horde will stop swarming in whilst the Tank is alive.
+	
 * Dark Carnival
   * Map 2
 	* Fixed Survivors getting punched onto wooden supports on the ladder choke rooftop.
@@ -123,7 +127,7 @@ Why make everything difficult when it doesn't have to be? :)
   * Tanks
 	* Tank Rocks will no longer get stuck on Common Infected, they will now successfully pass through them (still killing them). 
 	* Tank Rocks will no longer get stuck on Incapped Survivors, they will pass through them unless the same Rock incapped them.
-	* Hitting a Punch or will now instantly interrupt the pick-up, preventing a succesful pick-up.
+	* Fixed a bug that froze the Tank if a player controlling the Tank switched team or disconnected during the Death Animation.
   * Witch
     * The Witch has been fully removed.
 	* The First config to actually take this step, this magnificent creature is simply too glitchy and random to accept in a competitive environment.
@@ -133,6 +137,7 @@ Why make everything difficult when it doesn't have to be? :)
 	* Godframes have been Removed.
   * Jockey
 	* Godframes have been Removed.
+	* Fixed a bug/exploit that allowed Survivors to "self-shove" Jockeys off after already being Jockeyed.
   * Hunter
 	* Claw damage decreased to 4.
 	* Hunters can be shoved off normally, without requiring silly-ish fov angles.
@@ -155,11 +160,11 @@ Why make everything difficult when it doesn't have to be? :)
 
 * Weapon Adjustments:
   * Reload Speed:
-	* Uzi: 1.70 (**Acemod**: 1.75 - **Vanilla**: 2.23)
-    * Silenced Uzi: 1.76 (**Acemod**: 1.8 - **Vanilla**: 2.23)
+	* Uzi: 1.74 (**Acemod**: 1.75 - **Vanilla**: 2.23)
+    * Silenced Uzi: 1.85 (**Acemod**: 1.8 - **Vanilla**: 2.23)
   * Spread:
-	* Uzi: Moving 1.80 / Still 0.20 (**Acemod**: 1.65 / 0.20 - **Vanilla**: 3.00 / 0.69)
-    * Silenced Uzi: Moving 2.25 / Still 0.30 (**Acemod**: 1.75 / 0.26 - **Vanilla**: 3.00 / 0.85)
+	* Uzi: Moving 1.95 / Still 0.22 (**Acemod**: 1.65 / 0.20 - **Vanilla**: 3.00 / 0.69)
+    * Silenced Uzi: Moving 2.45 / Still 0.30 (**Acemod**: 1.75 / 0.26 - **Vanilla**: 3.00 / 0.85)
   * Damage:
 	* Uzi: 21 (**Acemod** & **Vanilla**: 20)
 	* Shotgun Bonus Damage Range: 50 (**Acemod**: 75 - **Vanilla**: 100)

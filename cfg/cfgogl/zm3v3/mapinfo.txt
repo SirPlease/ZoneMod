@@ -47,6 +47,7 @@
 		{
 			"pain_pills"    "0"
 		}
+		"horde_tank"        "1"
 	}
 	"c2m1_highway"
 	{
