@@ -40,6 +40,8 @@ Why make everything difficult when it doesn't have to be? :)
   * TickRateFixes now also fixes Slow Doors and Pistol Scripts, useful for use with other configs.
 	* Make sure you're not loading l4dpistoldelay if you're using this Plugin.
 	* Make sure you don't have any adjustments to prop_rotating and prop_rotating_checkpoint speeds in your cfg/stripper folder.
+  * Specrates is a useful plugin to reduce server load causes by spectators.
+    * This will send less updates to Spectators whilst maintaining a pleasant viewing experience.
 
 - - - -
 ### Bug / Exploit Fixes ###
@@ -51,6 +53,7 @@ Why make everything difficult when it doesn't have to be? :)
 * Fixed Weapon Changes (Spread, Clipsize, etc) sticking after Config unload.
 * Fixed Slow Doors from within the Config (TickrateFixes.smx)
 * Fixed Players taking Friendly Fire while jockied or carried by a Charger.
+* Fixed a bug/exploit that allowed Survivors to "self-shove" Jockeys off after already being Jockeyed.
 
 - - - -
 ### Map Changes ###
@@ -137,7 +140,6 @@ Why make everything difficult when it doesn't have to be? :)
 	* Godframes have been Removed.
   * Jockey
 	* Godframes have been Removed.
-	* Fixed a bug/exploit that allowed Survivors to "self-shove" Jockeys off after already being Jockeyed.
   * Hunter
 	* Claw damage decreased to 4.
 	* Hunters can be shoved off normally, without requiring silly-ish fov angles.
@@ -183,6 +185,9 @@ Resetting the ammo back to Vanilla values for Uzis should have an noticable effe
 ### Miscellaneous ###
 * Updated AutoPause so that it no longers pauses during Ready-up and Round Ends.
 * Removed !spawns functionality while the Game is Live.
+* Alarm Cars that were hit by other Tank Hittables will now have their Alarms disabled.
+* Removed the chance of Common Infected sitting or lying down.
+* Removed the chance of Common Infected attacking eachother.
 * Survivors no longer switch to Pills automatically when they're being passed pills through M2.
 * Survivors can choose whether or not to use the "Vanilla" behaviour when picking up Secondary Weapons when they have something else equipped.
   * You can use !secondary to toggle the behaviour.
