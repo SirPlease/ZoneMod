@@ -332,6 +332,8 @@
 		"start_extra_dist"  "0.000000"
 		"end_dist"          "75.000000"
 		"max_distance"      "600"
+		"tank_ban_flow_min" "55"
+		"tank_ban_flow_max" "80"
 	}
 	"c8m4_interior"
 	{
