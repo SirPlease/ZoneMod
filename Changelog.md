@@ -16,7 +16,9 @@
   * Fixed not being able to go back on the choke on Dead Center 3 because of the chair you'd clip through.
   
 * **v1.5.1**
-  * Rewrote and structured NoDeathCamSkip
+  * Fixed Cars doing 6 damage a hit rather than 24 on Parish Map 5, caused by an outdated plugin.
+  
+  * Rewrote NoDeathCamSkip:
     * There's no way to skip the Death Cam now by pressing buttons and such.
 	* During testing it showed that you could bypass the old deathcamskip with other keypresses as well (Zoom, Use, Duck, etc)
 	
