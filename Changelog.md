@@ -24,3 +24,7 @@
 	
   * Map Exploit Fixed:
   	* **Hard Rain Map 2 and 3:** Blocked Shortcut up the pipe to skip Ramp Choke.
+	
+* **v1.5.1T**
+  * Last minute hotfixes to NoDeathCamSkip and l4d2_horde_equaliser.
+  * Tournament Ready~
