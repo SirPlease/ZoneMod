@@ -127,6 +127,9 @@ Why make everything difficult when it doesn't have to be? :)
   * No more getting away with these!
 
 * Special Infected
+  * General
+    * Spawntimers have been decreased by **1** second. (**15 Seconds now**)  
+	* The Spawn rotation is now handled by a Plugin, fixing spawn rotation issues.
   * Tanks
 	* Tank Rocks will no longer get stuck on Common Infected, they will now successfully pass through them (still killing them). 
 	* Tank Rocks will no longer get stuck on Incapped Survivors, they will pass through them unless the same Rock incapped them.
@@ -138,15 +141,20 @@ Why make everything difficult when it doesn't have to be? :)
 	* Smokers no longer instantly do damage, the first tick of damage is vanilla styled (1s) and deals 3 damage. (After that it's 1 per 0.33s like in Acemod)
 	* Survivors are now pulled through common infected. ([Video](https://www.youtube.com/watch?v=PC4k0aKvOlY))
 	* Godframes have been Removed.
+  * **Spitter:**
+    * Added alternate Damage to Spit, Survivors now take 3 damage every second Tick.
+	  * This increases the total Spit damage per puddle from 40 to 50.
   * Jockey
 	* Godframes have been Removed.
+	* Can no longer be Skeeted.
   * Hunter
 	* Claw damage decreased to 4.
 	* Hunters can be shoved off normally, without requiring silly-ish fov angles.
-	* Wallkicks have been enabled again.
   * Charger
 	* Punch damage decreased to 6.
-	* Chargers can no longer be fully leveled, a melee strike will do 350 damage per swing.
+	* Chargers can no longer be fully leveled, a melee strike will do 350 damage per swing.  
+	* When a Charger hits multiple survivors, the "*impacted*" Survivors will no longer slide away when Hunters/Jockeys pounce a teammate next to them while in their get-up animation.  
+    * Removed the Charger's warm-up time of 0.5s
 
 * Tank Spawns:
   * Dark Carnival Map 3: The Tank can no longer spawn on the Coaster.
@@ -165,14 +173,14 @@ Why make everything difficult when it doesn't have to be? :)
 	* Uzi: 1.74 (**Acemod**: 1.75 - **Vanilla**: 2.23)
     * Silenced Uzi: 1.85 (**Acemod**: 1.8 - **Vanilla**: 2.23)
   * Spread:
-	* Uzi: Moving 1.95 / Still 0.22 (**Acemod**: 1.65 / 0.20 - **Vanilla**: 3.00 / 0.69)
-    * Silenced Uzi: Moving 2.45 / Still 0.30 (**Acemod**: 1.75 / 0.26 - **Vanilla**: 3.00 / 0.85)
+	* Uzi: Moving 1.70 / Still 0.18 (**Acemod**: 1.65 / 0.20 - **Vanilla**: 3.00 / 0.69)
+    * Silenced Uzi: Moving 2.20 / Still 0.28 (**Acemod**: 1.75 / 0.26 - **Vanilla**: 3.00 / 0.85)
   * Damage:
 	* Uzi: 21 (**Acemod** & **Vanilla**: 20)
-	* Shotgun Bonus Damage Range: 50 (**Acemod**: 75 - **Vanilla**: 100)
+	* Pump Shotgun: 300 (**Acemod**: 280)
+	* Shotgun Bonus Damage Range: 60 (**Acemod**: 75 - **Vanilla**: 100)
   * Damage Drop-off:
-	* Uzi: 0.81 (**Acemod & Vanilla**: 0.83)
-	* Silenced Uzi: 0.79 (**Acemod & Vanilla**: 0.83)
+	* Silenced Uzi: 0.81 (**Acemod & Vanilla**: 0.83)
   * Ammo:
 	* Uzi & Silenced Uzi: 50/650 (**Acemod**: 50/800)
 
@@ -183,6 +191,8 @@ Resetting the ammo back to Vanilla values for Uzis should have an noticable effe
   
 - - - -
 ### Miscellaneous ###
+* Pauses will no longer spawn Players that were holding "*Fire*" right before the Pause.
+* Casters will now have the Spechud toggled on for them automatically, even after reconnects and such.
 * Updated AutoPause so that it no longers pauses during Ready-up and Round Ends.
 * Removed !spawns functionality while the Game is Live.
 * Alarm Cars that were hit by other Tank Hittables will now have their Alarms disabled.
