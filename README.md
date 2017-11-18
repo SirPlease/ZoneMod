@@ -125,34 +125,42 @@ Why make everything difficult when it doesn't have to be? :)
 
 * Damage Bonus now also takes Friendly Fire and Fall Damage into account.
   * No more getting away with these!
+  
+* Damage Bonus has been decreased to **20%** of the total Bonus (was **25%**)
+  * This means Solid Health now decides 80% of the Bonus.
 
 * Special Infected
-  * General
-    * Spawntimers have been decreased by **1** second. (**15 Seconds now**)  
+  * **General:**
+    * Spawntimers have been decreased by **2** seconds. (**14 Seconds now**)  
 	* The Spawn rotation is now handled by a Plugin, fixing spawn rotation issues.
-  * Tanks
+  * **Tanks:**
 	* Tank Rocks will no longer get stuck on Common Infected, they will now successfully pass through them (still killing them). 
 	* Tank Rocks will no longer get stuck on Incapped Survivors, they will pass through them unless the same Rock incapped them.
+	* Tanks will now lose Frustration **1.5s** after losing LOS of the Survivors. (was **2s**)
+	  * This should make it just that needed bit harder for Tanks to play it out insanely long.
 	* Fixed a bug that froze the Tank if a player controlling the Tank switched team or disconnected during the Death Animation.
-  * Witch
+  * **Witch:**
     * The Witch has been fully removed.
-	* The First config to actually take this step, this magnificent creature is simply too glitchy and random to accept in a competitive environment.
-  * Smoker
-	* Smokers no longer instantly do damage, the first tick of damage is vanilla styled (1s) and deals 3 damage. (After that it's 1 per 0.33s like in Acemod)
+	  * The First config to actually take this step, this magnificent creature is simply too glitchy and random to accept in a competitive environment.
+  * **Smoker:**
+	* Smokers no longer instantly do damage, the first tick of damage is vanilla styled (1s) and deals **3** damage. (After that it's **1** per **0.33s** like in Acemod)
 	* Survivors are now pulled through common infected. ([Video](https://www.youtube.com/watch?v=PC4k0aKvOlY))
 	* Godframes have been Removed.
   * **Spitter:**
-    * Added alternate Damage to Spit, Survivors now take 3 damage every second Tick.
-	  * This increases the total Spit damage per puddle from 40 to 50.
-  * Jockey
+    * Spit Damage has been increased to **3**.
+    * Added alternate Damage to Spit, Survivors now take **4** damage every second Tick.
+	  * This increases the total Spit damage per puddle from **40** to **70**.
+  * **Jockey:**
 	* Godframes have been Removed.
 	* Can no longer be Skeeted.
-  * Hunter
-	* Claw damage decreased to 4.
+	* Jockey Ride speed has been increased by **8%**.
+  * **Hunter:**
+	* Claw damage decreased to **4**.
 	* Hunters can be shoved off normally, without requiring silly-ish fov angles.
-  * Charger
-	* Punch damage decreased to 6.
-	* Chargers can no longer be fully leveled, a melee strike will do 350 damage per swing.  
+  * **Charger:**
+	* Punch damage set to **8**.
+	  * Charger's first Punch after spawn does **5** Damage instead of **8**.
+	* Chargers can no longer be fully leveled, a melee strike will do **350** damage per swing.  
 	* When a Charger hits multiple survivors, the "*impacted*" Survivors will no longer slide away when Hunters/Jockeys pounce a teammate next to them while in their get-up animation.  
     * Removed the Charger's warm-up time of 0.5s
 
