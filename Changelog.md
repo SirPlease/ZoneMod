@@ -116,12 +116,7 @@
 
 * **General:**
   * Spawntimers have been decreased by **1** second. (**14 Seconds now**)
- 
-* **Spitter:**
-  * Increased Spit Damage by **1**. (from **2** to **3**)
-  * Alternate Ticks are still present, meaning every second tick of spit damage will do **4** damage.
-	* This increases the total Spit damage per puddle from **50** to **70**.
-	
+
 * **Charger:**
   * Punch Damage increased to **8**. (was **6**)
   * The Charger's first Punch will do **5** Damage.

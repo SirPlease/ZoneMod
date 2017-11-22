@@ -147,9 +147,8 @@ Why make everything difficult when it doesn't have to be? :)
 	* Survivors are now pulled through common infected. ([Video](https://www.youtube.com/watch?v=PC4k0aKvOlY))
 	* Godframes have been Removed.
   * **Spitter:**
-    * Spit Damage has been increased to **3**.
-    * Added alternate Damage to Spit, Survivors now take **4** damage every second Tick.
-	  * This increases the total Spit damage per puddle from **40** to **70**.
+    * Added alternate Damage to Spit, Survivors now take **3** damage every second Tick.
+	  * This increases the total Spit damage per puddle from **40** to **50**.
   * **Jockey:**
 	* Godframes have been Removed.
 	* Can no longer be Skeeted.
