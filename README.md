@@ -136,8 +136,10 @@ Why make everything difficult when it doesn't have to be? :)
   * **Tanks:**
 	* Tank Rocks will no longer get stuck on Common Infected, they will now successfully pass through them (still killing them). 
 	* Tank Rocks will no longer get stuck on Incapped Survivors, they will pass through them unless the same Rock incapped them.
-	* Tanks will now lose Frustration **1.5s** after losing LOS of the Survivors. (was **2s**)
+	* Tanks will now get Frustration back if they hold LOS for 4 Seconds, giving them 5% Frustration each time they do so.
+	* Tanks will now lose Frustration **1.2s** after losing LOS of the Survivors. (was **2s**)
 	  * This should make it just that needed bit harder for Tanks to play it out insanely long.
+	  * Tanks will have their Frustration Bar blinking earlier on to make sure players are at least wary of their "low" Frustration.
 	* Fixed a bug that froze the Tank if a player controlling the Tank switched team or disconnected during the Death Animation.
   * **Witch:**
     * The Witch has been fully removed.
@@ -173,7 +175,10 @@ Why make everything difficult when it doesn't have to be? :)
 
 * Melee Weapons
   * Knife and the Tonfa have been removed from within the Config because of their speed.
-  * Hardcoded spawns are now random, this means that for example in Parish 2 start saferoom you might have a cuttable melee instead of a Frying Pan.
+  * Hardcoded spawns are now random.
+  * Melee Weapon spawns have been removed from Saferooms.
+  * Melee Weapons have been limited to **2** in 4v4 and 3v3, **1** in 2v2 and 1v1.
+  * Melee Weapons do the Vanilla (**300**) damage against the Tank.
 
 * Weapon Adjustments:
   * Reload Speed:
