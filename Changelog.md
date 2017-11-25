@@ -145,8 +145,8 @@ Always make sure to double check though! :smile:
 # **Zonemod v1.7.1**
 ### **[Infected]:**
 * **Tank:**
-  * You will now lose Frustration every **1.2s** after losing LOS of the Survivors. (was **1.5s**)
-	* With Tanks losing Frustration faster, the Frustration bar will start blinking earlier on to notify you that you need to do something about it.
+  * You will now lose Frustration **1.2s** after losing LOS of the Survivors. (was **1.5s**)
+	* With Tanks losing Frustration faster after losing LOS, the Frustration bar will start blinking earlier on to notify you that you need to do something about it.
   * Keeping LOS of the Survivors will fill your rage bar (can't go past that Control's rage.)
     * As compensation for the Quick Frustration loss, Tanks will now be rewarded for keeping LOS (Gain 5% for every 4 Seconds of LOS Held)
 	* Keep in mind that is a complete Alpha test, the Plugin is fully functional but its effectiveness and impact hasn't been tested in real gameplay.
