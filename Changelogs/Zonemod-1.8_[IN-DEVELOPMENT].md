@@ -18,6 +18,15 @@
 
 ---
 
+### **[Bug Fixes]:**
+
+---
+
+* Fixed the vote for Setting Tank displaying a vote failure when the vote actually passed.
+* Fixed setting the Witch to **0%** breaking the vote.
+
+---
+
 ### **[Survivors]:**
 
 ---
@@ -44,7 +53,8 @@
   * Quad-caps are now possible.
 
 * **Tank:**
-  * Tank Speed has been increased to match the Survivors speed. 
+  * Minimum Tank Spawn has been set to 20%. 
+  * Tank Speed has been increased to match the Survivors speed. (**10%** Speed Increase)
   * Tank HP has been increased.
     * *(4v4)*: **6750**
     * *(3v3)*: **5025**
