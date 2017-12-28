@@ -1,20 +1,6 @@
 # **Zonemod v1.8**
-> **This Changelog is from 1.7.1 to 1.8**
+> **This Changelog is from 1.7.1 to 1.8**.  
 > 1.7.2 and onwards have had buggy and unsatisfactory releases, which is why we're moving straight to a polished 1.8.
-
----
-
-### **[General]:**
-
----
-
-* Added the "Mix System" to L4D2 (Original work for L4D1 by Zen)
-  * Simply type **!mix** in chat (**all participating players NEED to be non-spec**, join an available team.)
-    * **Phase 1:** Players vote on who should be Captains.
-      * The Captain with the most votes is considered the Winner, Winner gets Survivor-side and first pick.
-    * **Phase 2:** Captains get to pick Players in turns.
-      * Picking Order is: ABABBA
-    * **Phase 3:** Players are automatically moved to their teams and the game can proceed as usual.
 
 ---
 
@@ -22,9 +8,13 @@
 
 ---
 
-* Fixed the vote for Setting Tank displaying a vote failure when the vote actually passed.
-* Fixed setting the Witch to **0%** breaking the vote.
+* **Boss Voting:**
+  * Fixed the vote for Setting Tank displaying a vote failure when the vote actually passed.
+  * Fixed setting the Witch to **0%** breaking the vote.
 
+* **Slots Vote:**
+  * Fixed a derp in the chat print out.
+  
 ---
 
 ### **[Survivors]:**
@@ -32,15 +22,16 @@
 ---
 
 * **Sounds:**
-  * Updated Sound Manipulation.
-    * Added Support for L4D1 Survivors.
-    * Fixed a few issues that would break melee grunts entirely.
+  * Added Support for L4D1 Survivors melee grunting.
+  * Fixed a few issues that would break melee grunts entirely.
   
 * **Friendly Fire:**
-  * Maximum amount of Friendly Fire per Shotgun blast has been set to **8**.
+  * Maximum amount of Friendly Fire per Shotgun blast has been increased from **6** to **8**.
 
 * **Health/Damage Bonus Adjustments:**
-  * Damage Bonus now covers **30%** of the total bonus, leaving Health Bonus at **70%**.
+  * Damage Bonus now covers **30%** of the total bonus, leaving Health Bonus at **70%** [Was 20%**/**80%].
+  * Pills total worth has been increased to a maximum of 50 Bonus per set.
+    * This effectively gives you a higher reward for holding onto pills.
 
 ---
 
@@ -49,8 +40,9 @@
 ---
 
 * **General:**
-  * Spawntimers have been decreased by 1 second in 4v4. (**13 Seconds now**)
+  * Spawntimers have been decreased by **1** second in 4v4. (**13 Seconds now**)
   * Quad-caps are now possible.
+  * The Sack Order Plugin has been disabled due to instability, following regular AI Director methods again.
 
 * **Tank:**
   * Minimum Tank Spawn has been set to 20%. 
@@ -68,12 +60,11 @@
     * Feedback has been clear, and testing/experience has proven it not to be of good use in a Competitive Environment.
 
 * **Charger:**
-  * Chargers now deal 8 damage per Punch.
+  * Chargers punch damage has been increased from **6** to **8**.
  
 * **Hunter:**
   * Hunter Limit has been increased to **2**. 
   * Hunter Scratch damage has been reset to **6**. 
-  * Hunters now have their Health set at **325**.
   * Hunters can wallkick again in 4v4, 3v3 and 2v2.
  
 * **Spitter:**
@@ -83,7 +74,7 @@
 * **Jockey:**
   * Improved upon the bacteria sound playing for Jockeys.
     * Fixed the Sound playing when a player that had a Jockey in ghostmode became the Tank or went to Spec.
-    * **NOTE:** You need Music Volume on to hear the bacteria sound. (Even low works)
+    * **NOTE:** You need Music Volume on to hear the bacteria sound. (Even low volume works)
 
 ---
 
@@ -92,6 +83,7 @@
 ---
 
 * **Melee:**
+  * The Melee Limit has been removed.
   * Your Melee weapon will now be dropped when hit by a Tank, instead of switching to your primary weapon.
     * The previous method had a few very annoying bugs and it was rather annoying to keep switching to your melee after being hit, let alone that it was still bypassable.
     * While this method isn't ideal and still feels unnatural, trying out a new mechanic beats playing with a method that can break games entirely.
