@@ -126,21 +126,28 @@ Why make everything difficult when it doesn't have to be? :)
 * Damage Bonus now also takes Friendly Fire and Fall Damage into account.
   * No more getting away with these!
   
-* Damage Bonus has been decreased to **20%** of the total Bonus (was **25%**)
-  * This means Solid Health now decides 80% of the Bonus.
+* Damage Bonus: 
+  * DB has been increased to **30%** of the total Bonus (was **25%**)
+	* This means Solid Health now decides 70% of the Bonus.
+  * Pills total worth has been increased to a maximum of 50 Bonus per set.
+    * This effectively gives you a higher reward for holding onto pills.
+  * Damage Bonus now also takes Friendly Fire and Fall Damage into account.
+	* No more getting away with these!
 
-* Special Infected
+* Special Infected:
   * **General:**
-    * Spawntimers have been decreased by **2** seconds. (**14 Seconds now**)  
-	* The Spawn rotation is now handled by a Plugin, fixing spawn rotation issues.
+    * Spawntimers have been decreased by **3** seconds. (**13** Seconds now)  
+	* Quad Caps are now possible.
   * **Tanks:**
 	* Tank Rocks will no longer get stuck on Common Infected, they will now successfully pass through them (still killing them). 
 	* Tank Rocks will no longer get stuck on Incapped Survivors, they will pass through them unless the same Rock incapped them.
-	* Tanks will now get Frustration back if they hold LOS for 4 Seconds, giving them 5% Frustration each time they do so.
-	* Tanks will now lose Frustration **1.2s** after losing LOS of the Survivors. (was **2s**)
-	  * This should make it just that needed bit harder for Tanks to play it out insanely long.
-	  * Tanks will have their Frustration Bar blinking earlier on to make sure players are at least wary of their "low" Frustration.
 	* Fixed a bug that froze the Tank if a player controlling the Tank switched team or disconnected during the Death Animation.
+	* Tanks now run at the same speed as Survivor (10% Speed increase)
+	* Tank Slowdown has been re-added, but nerfed.
+	* Tank HP has been increased:
+	* - *(4v4)*: **6750**  
+	* - *(3v3)*: **5025**  
+	* - *(2v2)*: **3480**  
   * **Witch:**
     * The Witch has been fully removed.
 	  * The First config to actually take this step, this magnificent creature is simply too glitchy and random to accept in a competitive environment.
@@ -153,32 +160,40 @@ Why make everything difficult when it doesn't have to be? :)
 	  * This increases the total Spit damage per puddle from **40** to **50**.
   * **Jockey:**
 	* Godframes have been Removed.
-	* Can no longer be Skeeted.
+	* Jockey can no longer be Skeeted.
 	* Jockey Ride speed has been increased by **8%**.
+	* Fixed the Sound playing when a player that had a Jockey in ghostmode became the Tank or went to Spec.
   * **Hunter:**
-	* Claw damage decreased to **4**.
+    * Hunter limit has been set to 2.
+	* Hunters can wallkick in 2v2, 3v3 and 4v4.
 	* Hunters can be shoved off normally, without requiring silly-ish fov angles.
+	* Hunters can't be shoved unless pinning a Survivor.
   * **Charger:**
 	* Punch damage set to **8**.
-	  * Charger's first Punch after spawn does **5** Damage instead of **8**.
 	* Chargers can no longer be fully leveled, a melee strike will do **350** damage per swing.  
 	* When a Charger hits multiple survivors, the "*impacted*" Survivors will no longer slide away when Hunters/Jockeys pounce a teammate next to them while in their get-up animation.  
     * Removed the Charger's warm-up time of 0.5s
 
 * Tank Spawns:
   * Dark Carnival Map 3: The Tank can no longer spawn on the Coaster.
+  * Tanks have been prevented from spawning before **20%** and after **85%**
+    * Done to balance those early tanks and to prevent issues with very late Tanks.
 
-* Survivors
+* Survivors:
   * Friendly Fire Godframes have been added and set to 0.8 seconds.
-  * After being punched, melee weapons will be useless for a bit to ensure "easy-hits" are not possible.
   * Water Slowdown is back, but only outside of Tank Fights.
+  * Added Support for L4D1 Survivors melee grunting.
+  * Fixed a few issues that would break melee grunts entirely.
+  * Blocked a ton of Survivor lines from playing, easier on the ears!
+  * Maximum amount of Friendly Fire per Shotgun blast has been increased from **6** to **8**.
 
-* Melee Weapons
+* Melee Weapons:
   * Knife and the Tonfa have been removed from within the Config because of their speed.
   * Hardcoded spawns are now random.
   * Melee Weapon spawns have been removed from Saferooms.
-  * Melee Weapons have been limited to **2** in 4v4 and 3v3, **1** in 2v2 and 1v1.
-  * Melee Weapons do the Vanilla (**300**) damage against the Tank.
+  * If you're holding out your Melee when being punched by a Tank you no longer switch to your primary weapon.
+    * This "feature" had a game-breaking bug where you'd drop your primary weapon and you'd be unable to pick it back up.
+  * Melee Weapons do **225** damage against the Tank per swing (**Vanilla:** 300)
 
 * Weapon Adjustments:
   * Reload Speed:
@@ -186,13 +201,15 @@ Why make everything difficult when it doesn't have to be? :)
     * Silenced Uzi: 1.85 (**Acemod**: 1.8 - **Vanilla**: 2.23)
   * Spread:
 	* Uzi: Moving 1.70 / Still 0.18 (**Acemod**: 1.65 / 0.20 - **Vanilla**: 3.00 / 0.69)
-    * Silenced Uzi: Moving 2.20 / Still 0.28 (**Acemod**: 1.75 / 0.26 - **Vanilla**: 3.00 / 0.85)
+    * Silenced Uzi: Moving 2.30 / Still 0.36 (**Acemod**: 1.75 / 0.26 - **Vanilla**: 3.00 / 0.85)
   * Damage:
-	* Uzi: 21 (**Acemod** & **Vanilla**: 20)
+	* Uzi: 22 (**Acemod** & **Vanilla**: 20)
 	* Pump Shotgun: 300 (**Acemod**: 280)
 	* Shotgun Bonus Damage Range: 60 (**Acemod**: 75 - **Vanilla**: 100)
   * Damage Drop-off:
-	* Silenced Uzi: 0.81 (**Acemod & Vanilla**: 0.83)
+	* Silenced Uzi: 0.80 (**Acemod & Vanilla**: 0.83)
+	* Pump Shotgun: 0.70 (**Acemod & Vanilla**: 0.69)
+	* Chrome Shotgun: 0.73 (**Acemod & Vanilla**: 0.69)
   * Ammo:
 	* Uzi & Silenced Uzi: 50/650 (**Acemod**: 50/800)
 
@@ -203,6 +220,7 @@ Resetting the ammo back to Vanilla values for Uzis should have an noticable effe
   
 - - - -
 ### Miscellaneous ###
+* Improvents to checking Clients on their Soundfiles.
 * Pauses will no longer spawn Players that were holding "*Fire*" right before the Pause.
 * Casters will now have the Spechud toggled on for them automatically, even after reconnects and such.
 * Updated AutoPause so that it no longers pauses during Ready-up and Round Ends.

@@ -4,9 +4,12 @@
 
 ---
 
-### **[Bug Fixes]:**
+### **[Bug/Exploit Fixes]:**
 
 ---
+
+* **Smoker Drag Damage**
+  * Fixed not dealing 3 Damage on the first tick sometimes.
 
 * **Boss Voting:**
   * Fixed the vote for Setting Tank displaying a vote failure when the vote actually passed.
@@ -14,6 +17,12 @@
 
 * **Slots Vote:**
   * Fixed a derp in the chat print out.
+  
+* **Consistency Fix:**
+  * Clients are now also checked on pauses, this prevents players from being able to know when a check is about to happen, making them unable to bypass the whitelist.
+	* Depending on the Server's whitelisted sounds, players will suffer from a slight lag on pause, but as nothing is really going on.. You'll be fine.
+    * I recommend loading this in all your configs, as well as setting the two cvars in your server.cfg
+	* [Source File](http://codepad.org/XdWvjts9)
   
 ---
 
@@ -24,6 +33,7 @@
 * **Sounds:**
   * Added Support for L4D1 Survivors melee grunting.
   * Fixed a few issues that would break melee grunts entirely.
+  * Blocked a ton of Survivor lines from playing, easier on the ears!
   
 * **Friendly Fire:**
   * Maximum amount of Friendly Fire per Shotgun blast has been increased from **6** to **8**.
@@ -46,11 +56,14 @@
 
 * **Tank:**
   * Minimum Tank Spawn has been set to 20%. 
+  * Maximum Tank Spawn has been set to 85% to prevent issues.
   * Tank Speed has been increased to match the Survivors speed. (**10%** Speed Increase)
   * Tank HP has been increased.
     * *(4v4)*: **6750**
     * *(3v3)*: **5025**
     * *(2v2)*: **3480**
+  * Tanks have been prevented from spawning before **20%** and after **85%**
+    * Done to balance those early tanks and to prevent issues with very late Tanks.
   * Tank Slowdown has been re-added and modified.
     * Ranked in order of most slowdown per shot:
       * *Shotgun*
@@ -59,6 +72,10 @@
   * The LOS/Rage Gaining mechanism that was introduced in 1.7.1 has been removed.
     * Feedback has been clear, and testing/experience has proven it not to be of good use in a Competitive Environment.
 
+* **Spitter:**
+  * Alternate Ticks are back, meaning the Spit will do **2** damage normally and **3** damage every **2nd** hit.
+    * For those of you who demand 3 damage spit, please keep in mind that this config has a very low spawn timer.
+
 * **Charger:**
   * Chargers punch damage has been increased from **6** to **8**.
  
@@ -66,10 +83,6 @@
   * Hunter Limit has been increased to **2**. 
   * Hunter Scratch damage has been reset to **6**. 
   * Hunters can wallkick again in 4v4, 3v3 and 2v2.
- 
-* **Spitter:**
-  * Spitter Acid now does a consistent **3** damage per Tick.
-    * A much requested buff to the Spitter.
 
 * **Jockey:**
   * Improved upon the bacteria sound playing for Jockeys.
@@ -84,13 +97,14 @@
 
 * **Melee:**
   * The Melee Limit has been removed.
-  * Your Melee weapon will now be dropped when hit by a Tank, instead of switching to your primary weapon.
-    * The previous method had a few very annoying bugs and it was rather annoying to keep switching to your melee after being hit, let alone that it was still bypassable.
-    * While this method isn't ideal and still feels unnatural, trying out a new mechanic beats playing with a method that can break games entirely.
-  * Melee Weapons do **300** damage per hit on Tanks again.
-  * The weapon limits on melees have been removed.
     * This has been done because it simply feels very unnatural and the other nerfs so far seem sufficient already.
+  * If you're holding out your Melee when being punched by a Tank you no longer switch to your primary weapon.
+    * This "feature" had a game-breaking bug where you'd drop your primary weapon and you'd be unable to pick it back up.
+  * Melee Weapons do **225** damage per hit on Tank.
 
 * **Shotguns:**
   * Shotguns have received powerful and enjoyable buffs to their range and damage on Tank.
-    * These changes have been very OP in the past, lets see how they balance out against a much stronger Infected Side. 
+    * These changes have been very OP in the past, lets see how they balance out against a much stronger Infected Side and along the Zonemod Uzi.
+	
+* **Silenced Uzi:**
+  * Silenced Uzis have been slightly nerfed in terms of spread per shot.
