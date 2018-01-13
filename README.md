@@ -122,9 +122,6 @@ Why make everything difficult when it doesn't have to be? :)
 * Anti-baiting Sensitivity Delay decreased from Acemod's 20s to 15s.
   * Baiting is a valid tactic, but nobody wants to fall asleep during very lengthy baiting sessions.
   * This change means that the timer once triggered is 30s, so don't worry about it being too short.
-
-* Damage Bonus now also takes Friendly Fire and Fall Damage into account.
-  * No more getting away with these!
   
 * Damage Bonus: 
   * DB has been increased to **30%** of the total Bonus (was **25%**)
@@ -145,9 +142,9 @@ Why make everything difficult when it doesn't have to be? :)
 	* Tanks now run at the same speed as Survivor (10% Speed increase)
 	* Tank Slowdown has been re-added, but nerfed.
 	* Tank HP has been increased:
-	* - *(4v4)*: **6750**  
-	* - *(3v3)*: **5025**  
-	* - *(2v2)*: **3480**  
+	  - *(4v4)*: **6750**  
+	  - *(3v3)*: **5025**  
+	  - *(2v2)*: **3480**  
   * **Witch:**
     * The Witch has been fully removed.
 	  * The First config to actually take this step, this magnificent creature is simply too glitchy and random to accept in a competitive environment.
