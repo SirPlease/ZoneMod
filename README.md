@@ -15,7 +15,7 @@ Why make everything difficult when it doesn't have to be? :)
 * Requirements:
   * Clean Servers:
 	* [Sourcemod](https://www.sourcemod.net/downloads.php?branch=1.7-dev) (1.6 or 1.7), [Metamod](https://www.metamodsource.net/), [Stripper:Source](http://www.bailopan.net/stripper/#install).
-	* [Extensions, Gamedata, Main Competitive Plugins, etc](http://sirftp.com/Left4Dead2/ZoneModRequirements.zip)
+	* [Extensions, Gamedata, Main Competitive Plugins, etc](http://sirpleaseny.site.nfoservers.com/ZoneModRequirements.zip)
 	* These simple Steps also setup your Server's base for other configs, so you'll only need the optional plugins that other configs require.
   * Competitive Servers:
 	* None, modify your matchmodes file to add the config to the Match menu and you're set. :)
