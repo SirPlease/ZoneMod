@@ -54,20 +54,27 @@ Why make everything difficult when it doesn't have to be? :)
 * Fixed Slow Doors from within the Config (TickrateFixes.smx)
 * Fixed Players taking Friendly Fire while jockied or carried by a Charger.
 * Fixed a bug/exploit that allowed Survivors to "self-shove" Jockeys off after already being Jockeyed.
+* Fixed a lagspike that occurs when switching to the other team when a round ends, this resolves invisible players on the first hit.
+* Fixed an Exploit that allowed you to duplicate Survivors and or ruin entire games by simply picking a character that was already taken with a console command.
+* Fixed an issue that could cause damage inconsistency when loading the config right after playing Campaign on a difficulty other than Normal.
+* Fixed other SI being able to freeze the Charger mid-charge by attacking the same target.
+* Fixed other SI being able to target a Survivor that is about to get pummeled after a Charge.
+* Fixed a Valve Bug where you could see Shadows from Infected (Common and SI) through Walls, Floors and Ceilings.
+* Players that use an exploit to prevent taking damage when pinned by Special Infected will now receive 25 damage instantly when attempting to abuse this.
 
 - - - -
 ### Map Changes ###
 
-- Big Thanks to **NF** for most of these! :)
-
-* General
+* **General:**
   * All pill cabinets in Valve maps will now have a maximum of 2 pills
-
-* Dead Center
+  * Cleaned up the Maps from Junk Props that you could get stuck on, allowing for smoother movement.
+  * Common Infected Hordes in **1v1** and **2v2** have been **reduced** on maps where Events were limited in horde size.
+	
+* **Dead Center:**
   * Map 4
 	* Event Horde will stop swarming in whilst the Tank is alive.
 	
-* Dark Carnival
+* **Dark Carnival:**
   * Map 2
 	* Fixed Survivors getting punched onto wooden supports on the ladder choke rooftop.
 	* Added saferoom props from map 3 start to map 2 end for consistency.
@@ -78,8 +85,10 @@ Why make everything difficult when it doesn't have to be? :)
 	* Fixed an exploit that allowed Survivors to skip to the end of the coaster near the first ramp
 	* Blocked a way to jump up some wood pieces and skip to the end of the coaster
 	* Blocked survivors from accessing parts of the coaster tracks that allows them to turn off the event early.
+  * Map 4:
+    * Added an invisible block above angled food carts.
 
-* Hard Rain
+* **Hard Rain:**
   * Map 1
 	* Added a way for infected to get on the tall rooftop near the ambulance.
   * Map 4
@@ -87,7 +96,7 @@ Why make everything difficult when it doesn't have to be? :)
   * Finale
 	* Removed extra pills.
 
-* The Parish
+* **The Parish:**
   * Map 1
 	* Fixed players getting stuck on the trashbags at the very start.
   * Map 2
@@ -101,20 +110,52 @@ Why make everything difficult when it doesn't have to be? :)
 	* Added an ammo pile in the event area for late spawn Tank fights.
 	* Fixed Survivors sometimes hanging from the rooftop by the event.
 
-* No Mercy
+* **No Mercy:**
   * Map 3
 	* Readded the forklift to the warehouse.
 	* Fixed a stuck spot on the tables next to the pill cabinet.
   * Map 4
 	* Removed floodlight props due to exploit potential.
 
-* Death Toll
+* **Death Toll:**
   * Map 1 
 	* Fixed being able to jump across the bridge and skip the ladder choke.
 	* Fixed infected being able to get under the map near the ladder choke.
 	* Fixed multiple out of map exploits near the start.
   * Map 5
 	* Added some spawns near the dock to discourage camping there.
+
+* **Dead Air:**
+  * Map 3:
+    * Fixed Players getting stuck on the infamous "Klorain" Bottle after the Crescendo Event.  
+
+* **Diescraper Redux:**
+  * All Maps:
+	* Updated Diescraper Redux Mapinfo and Map Fixes to work on v3.61 (Final)
+	* Fixed Static Tanks not working properly on the latest Version.
+
+* **Fatal Freight:**
+  * Map 4:
+	* Fixed Medkits spawning in the Train cart, replaced them with 2 Sets of Pills.
+
+* **I Hate Mountains 2:**
+  * Map 4:
+	* Lowered Map Distance to **600**. (was **700**)
+
+* **Detour Ahead:**
+  * Map 4:
+	* Lowered Map Distance to **700**. (was **800**)
+
+* **Open Road:**
+  * Map 1: 
+    * Fixed Medkits spawning in the Saferoom. 
+	
+* **Dark Carnival Remix:**
+  * All Maps:
+    * Added full support for the integrated Tank spawn selection system.
+    * Info for Witch and Shortcuts will no longer be printed as the default commands will work.
+    * Disabled VoteBoss for this Campaign as it is not supported.
+    * Fixed Cvar Changes after switching sides every map.
 
 - - - -
 ### Gameplay / Balance Changes ###
@@ -133,22 +174,25 @@ Why make everything difficult when it doesn't have to be? :)
 
 * Special Infected:
   * **General:**
-    * Spawntimers have been decreased by **3** seconds. (**13** Seconds now)  
+    * Spawntimers have been decreased by **1** seconds. (**15** Seconds now)  
 	* Quad Caps are now possible.
+	* When a spawned Infected Player disconnects or becomes Tank the SI will instantly get kicked unless it’s a Boomer or has someone capped.
   * **Tanks:**
 	* Tank Rocks will no longer get stuck on Common Infected, they will now successfully pass through them (still killing them). 
 	* Tank Rocks will no longer get stuck on Incapped Survivors, they will pass through them unless the same Rock incapped them.
 	* Fixed a bug that froze the Tank if a player controlling the Tank switched team or disconnected during the Death Animation.
-	* Tanks now run at the same speed as Survivor (10% Speed increase)
-	* Tank Slowdown has been re-added, but nerfed.
+	* Tanks speed increased to **205** (was **200**)
+	* When a Tank punches a Hittable it adds a Glow to the hittable which only the Tank can see, allowing the Tank to see where his hittable is at all times.
+	* It now tells everyone who the Tank will be, instead of just the Infected.
 	* Tank HP has been increased:
-	  - *(4v4)*: **6750**  
+	  - *(4v4)*: **6000** (Default)
 	  - *(3v3)*: **5025**  
 	  - *(2v2)*: **3480**  
   * **Witch:**
     * The Witch has been fully removed.
 	  * The First config to actually take this step, this magnificent creature is simply too glitchy and random to accept in a competitive environment.
   * **Smoker:**
+    * Smoker's ability will now recharge within **13** seconds after a successful hit (was **15**)
 	* Smokers no longer instantly do damage, the first tick of damage is vanilla styled (1s) and deals **3** damage. (After that it's **1** per **0.33s** like in Acemod)
 	* Survivors are now pulled through common infected. ([Video](https://www.youtube.com/watch?v=PC4k0aKvOlY))
 	* Godframes have been Removed.
@@ -162,12 +206,12 @@ Why make everything difficult when it doesn't have to be? :)
 	* Fixed the Sound playing when a player that had a Jockey in ghostmode became the Tank or went to Spec.
   * **Hunter:**
     * Hunter limit has been set to 2.
-	* Hunters can wallkick in 2v2, 3v3 and 4v4.
+	* Hunters can wallkick in 3v3 and 4v4.
 	* Hunters can be shoved off normally, without requiring silly-ish fov angles.
 	* Hunters can't be shoved unless pinning a Survivor.
   * **Charger:**
 	* Punch damage set to **8**.
-	* Chargers can no longer be fully leveled, a melee strike will do **350** damage per swing.  
+	* Chargers can no longer be fully leveled, a melee strike will do **325** damage per swing.  
 	* When a Charger hits multiple survivors, the "*impacted*" Survivors will no longer slide away when Hunters/Jockeys pounce a teammate next to them while in their get-up animation.  
     * Removed the Charger's warm-up time of 0.5s
 
@@ -184,29 +228,31 @@ Why make everything difficult when it doesn't have to be? :)
   * Blocked a ton of Survivor lines from playing, easier on the ears!
   * Maximum amount of Friendly Fire per Shotgun blast has been increased from **6** to **8**.
 
+* Pills:
+  * Temp health will be given over time instead of instantly, this lovely gem of a feature is back from the dead.
+ 
 * Melee Weapons:
-  * Knife and the Tonfa have been removed from within the Config because of their speed.
-  * Hardcoded spawns are now random.
-  * Melee Weapon spawns have been removed from Saferooms.
+  * Removed all Melee Weapon Spawns.
+  * A fixed amount of Fireaxes will be spawned in the Saferoom.
+    * **1v1** & **2v2**: ***1 Fireaxe***.
+    * **3v3** & **4v4**: ***2 Fireaxes***.
   * If you're holding out your Melee when being punched by a Tank you no longer switch to your primary weapon.
     * This "feature" had a game-breaking bug where you'd drop your primary weapon and you'd be unable to pick it back up.
-  * Melee Weapons do **225** damage against the Tank per swing (**Vanilla:** 300)
+  * Melee Weapons do **240** damage against the Tank per swing (**Vanilla:** 300)
 
 * Weapon Adjustments:
   * Reload Speed:
 	* Uzi: 1.74 (**Acemod**: 1.75 - **Vanilla**: 2.23)
     * Silenced Uzi: 1.85 (**Acemod**: 1.8 - **Vanilla**: 2.23)
   * Spread:
-	* Uzi: Moving 1.70 / Still 0.18 (**Acemod**: 1.65 / 0.20 - **Vanilla**: 3.00 / 0.69)
-    * Silenced Uzi: Moving 2.30 / Still 0.36 (**Acemod**: 1.75 / 0.26 - **Vanilla**: 3.00 / 0.85)
+	* Uzi: Moving 1.85 / Still 0.26 (**Acemod**: 1.65 / 0.20 - **Vanilla**: 3.00 / 0.69)
+    * Silenced Uzi: Moving 2.15 / Still 0.36 (**Acemod**: 1.75 / 0.26 - **Vanilla**: 3.00 / 0.85)
   * Damage:
 	* Uzi: 22 (**Acemod** & **Vanilla**: 20)
-	* Pump Shotgun: 300 (**Acemod**: 280)
+	* Pump Shotgun: 294 (**Acemod**: 280)
 	* Shotgun Bonus Damage Range: 60 (**Acemod**: 75 - **Vanilla**: 100)
   * Damage Drop-off:
-	* Silenced Uzi: 0.80 (**Acemod & Vanilla**: 0.83)
-	* Pump Shotgun: 0.70 (**Acemod & Vanilla**: 0.69)
-	* Chrome Shotgun: 0.73 (**Acemod & Vanilla**: 0.69)
+	* Silenced Uzi: 0.79 (**Acemod & Vanilla**: 0.83)
   * Ammo:
 	* Uzi & Silenced Uzi: 50/650 (**Acemod**: 50/800)
 
